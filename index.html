@@ -1,0 +1,3218 @@
+<!DOCTYPE html>
+<html class="scroll-smooth bg-[#12130F] text-[#D8D8BB]" lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>MUSEU NOCTURNE — A Memória das Coisas / Exposição 034 (2026)</title>
+  <meta content="Museu Nocturne: Dark Romantic Archival Editorial. Exposição 'A Memória das Coisas' (Exposição 034 / 2026). Porto Alegre, Brasil. Arte + Memória + Matéria + Arquivo." name="description"/>
+
+  <!-- Tailwind CSS v3 com plugins container-queries e forms -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Google Fonts: Cormorant Garamond, Bodoni Moda, Cinzel, Alex Brush, Italianno & Space Mono -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;0,6..96,800;1,6..96,400&family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Italianno&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+
+  <script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            charcoal: {
+              base: '#171814',      /* Carvão Queimado Sujo */
+              deep: '#12130F',      /* Fundo Profundo */
+              tint: '#1C1D18',
+              surface: '#20211B',
+              border: 'rgba(216, 216, 187, 0.22)'
+            },
+            ivory: {
+              base: '#D8D8BB',      /* Marfim Envelhecido */
+              muted: '#ADAE91',     /* Marfim Amaciado */
+              light: '#EFEFD6',
+              border: 'rgba(216, 216, 187, 0.22)',
+              faint: 'rgba(216, 216, 187, 0.08)'
+            },
+            gold: {
+              accent: '#9A803D',    /* Ouro Antigo (< 5%) */
+              deep: '#725E29'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            display: ['"Bodoni Moda"', '"Cormorant Garamond"', 'serif'],
+            monumental: ['"Cinzel"', 'serif'],
+            script: ['"Alex Brush"', '"Italianno"', 'cursive'],
+            mono: ['"Space Mono"', 'monospace']
+          },
+          letterSpacing: {
+            widestarchival: '0.22em',
+            micro: '0.14em',
+            dense: '-0.04em'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style data-purpose="custom-typography-and-materiality">
+    /* Escala Editorial Monumental do Título Hero */
+    .monumental-hero-title {
+      font-family: 'Bodoni Moda', 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(44px, 5.8vw, 86px);
+      line-height: 0.94;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    /* Intervenção Caligráfica Cursiva Harmoniosa */
+    .calligraphic-overlap {
+      font-family: 'Alex Brush', cursive;
+      font-size: clamp(42px, 5vw, 72px);
+      line-height: 1;
+      transform: rotate(-6deg);
+      color: #9A803D;
+      opacity: 0.95;
+      text-shadow: 0 2px 16px rgba(18, 19, 15, 0.95);
+      pointer-events: none;
+    }
+
+    .calligraphic-interlude {
+      font-family: 'Alex Brush', cursive;
+      font-size: clamp(46px, 7.5vw, 115px);
+      line-height: 1;
+      transform: translate(-50%, -20%) rotate(-4deg);
+      color: #9A803D;
+      text-shadow: 0 4px 24px rgba(18, 19, 15, 0.95);
+      pointer-events: none;
+      z-index: 20;
+    }
+
+    /* Padrão Micro Metadata (8-11px, caixa alta, tracking estendido) */
+    .meta-micro {
+      font-family: 'Space Mono', monospace;
+      font-size: 8.5px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .meta-mono {
+      font-family: 'Space Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    /* Ausência estrita de cantos arredondados (Zero Border Radius) */
+    *, *::before, *::after {
+      border-radius: 0px !important;
+    }
+
+    /* Textura Analógica com Grão de Filme SVG */
+    .film-grain {
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.045 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    }
+
+    /* Divisores Hairline de 1px */
+    .hairline-b { border-bottom: 1px solid rgba(216, 216, 187, 0.22); }
+    .hairline-t { border-top: 1px solid rgba(216, 216, 187, 0.22); }
+    .hairline-r { border-right: 1px solid rgba(216, 216, 187, 0.22); }
+    .hairline-l { border-left: 1px solid rgba(216, 216, 187, 0.22); }
+    .hairline-all { border: 1px solid rgba(216, 216, 187, 0.22); }
+
+    /* Cruzetas Técnicas de Registro e Enquadramento */
+    .crosshair-corner {
+      position: relative;
+    }
+    .crosshair-corner::before, .crosshair-corner::after {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-color: rgba(216, 216, 187, 0.5);
+      pointer-events: none;
+      z-index: 10;
+    }
+    .crosshair-corner::before {
+      top: -4px;
+      left: -4px;
+      border-top: 1px solid;
+      border-left: 1px solid;
+    }
+    .crosshair-corner::after {
+      bottom: -4px;
+      right: -4px;
+      border-bottom: 1px solid;
+      border-right: 1px solid;
+    }
+
+    /* Expansão Sutil de Hairline ao Passar o Mouse */
+    .editorial-hover-line {
+      position: relative;
+    }
+    .editorial-hover-line::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 1px;
+      background-color: #9A803D;
+      transition: width 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .editorial-hover-line:hover::after {
+      width: 100%;
+    }
+
+    /* Transição Fotográfica Retida e Silenciosa */
+    .archival-img {
+      transition: filter 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .archival-img:hover {
+      filter: contrast(1.12) brightness(1.02);
+      transform: scale(1.018);
+    }
+
+    /* Modal Backdrop Blur */
+    .modal-backdrop {
+      background: rgba(18, 19, 15, 0.88);
+      backdrop-filter: blur(8px);
+    }
+
+    /* Respeito a Movimento Reduzido */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    /* Barra de Rolagem Customizada */
+    ::-webkit-scrollbar {
+      width: 4px;
+      background: #12130F;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(216, 216, 187, 0.25);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #9A803D;
+    }
+
+    /* Acessibilidade: Foco de Teclado Visível Conforme Diretriz lp.md */
+    a:focus-visible, button:focus-visible, input:focus-visible {
+      outline: 1px solid #9A803D !important;
+      outline-offset: 3px;
+    }
+
+    /* ─────────────────────────────────────────────────────────────
+       DESIGN TOKENS & MOTION DNA (Conforme Mastrer3.md - Seção 56)
+       ───────────────────────────────────────────────────────────── */
+    :root {
+      --bg: #171814;
+      --bg-deep: #12130F;
+      --surface: #24251F;
+
+      --ivory: #D8D8BB;
+      --ivory-muted: #ADAE91;
+
+      --gold: #9A803D;
+
+      --line: rgba(216, 216, 187, 0.22);
+      --line-strong: rgba(216, 216, 187, 0.42);
+
+      --radius: 0px;
+
+      --motion-instant: 120ms;
+      --motion-fast: 240ms;
+      --motion-base: 400ms;
+      --motion-reveal: 700ms;
+      --motion-slow: 1000ms;
+      --motion-cinematic: 1400ms;
+
+      --ease-out-editorial: cubic-bezier(.22, .61, .36, 1);
+      --ease-out-expo: cubic-bezier(.16, 1, .3, 1);
+      --ease-in-out-soft: cubic-bezier(.65, 0, .35, 1);
+    }
+
+    /* ─── FAQ Editorial Acordeão Hairline (Mastrer3.md Seção 31) ─── */
+    .faq-item {
+      border-bottom: 1px solid var(--line);
+      transition: background-color 0.3s ease;
+    }
+    .faq-item:hover {
+      background-color: rgba(28, 29, 24, 0.35);
+    }
+    .faq-trigger {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 0.5rem;
+      background: transparent;
+      border: none;
+      text-align: left;
+      cursor: pointer;
+      color: var(--ivory);
+      transition: color 0.3s ease;
+    }
+    .faq-trigger:hover {
+      color: #EFEFD6;
+    }
+    .faq-plus {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      font-size: 18px;
+      color: var(--gold);
+      font-family: 'Space Mono', monospace;
+      transition: transform 0.4s var(--ease-out-expo), color 0.3s ease;
+    }
+    .faq-trigger[aria-expanded="true"] .faq-plus {
+      transform: rotate(45deg);
+      color: #EFEFD6;
+    }
+    .faq-panel {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.45s var(--ease-out-editorial), opacity 0.35s ease, padding 0.35s ease;
+      padding: 0 0.5rem;
+    }
+    .faq-panel.is-open {
+      max-height: 380px;
+      opacity: 1;
+      padding-bottom: 1.75rem;
+    }
+
+    /* ─── Números e Passos Editoriais Monumentais ─── */
+    .editorial-step-num {
+      font-family: 'Bodoni Moda', 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(3rem, 5vw, 4.5rem);
+      line-height: 0.88;
+      color: rgba(216, 216, 187, 0.25);
+      font-weight: 700;
+      transition: color 0.4s ease, transform 0.4s var(--ease-out-expo);
+    }
+    .step-card:hover .editorial-step-num {
+      color: var(--gold);
+      transform: translateY(-2px);
+    }
+
+    /* ─── Tipografia Colofão Cortada no Rodapé ─── */
+    .monumental-footer-bleed {
+      font-family: 'Bodoni Moda', 'Cinzel', serif;
+      font-size: clamp(48px, 14vw, 190px);
+      line-height: 0.78;
+      letter-spacing: -0.04em;
+      color: rgba(216, 216, 187, 0.045);
+      text-transform: uppercase;
+      font-weight: 900;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    /* 1. Hero Photography Exposure Reveal */
+    .hero-image-reveal {
+      opacity: 0;
+      transform: scale(1.025);
+      filter: brightness(0.72) contrast(1.08);
+      transition: opacity 1000ms var(--ease-out-editorial),
+                  transform 1400ms var(--ease-out-expo),
+                  filter 1200ms var(--ease-out-editorial);
+      will-change: opacity, transform, filter;
+    }
+    .hero-image-reveal.is-visible {
+      opacity: 1;
+      transform: scale(1);
+      filter: brightness(0.94) contrast(1.08);
+    }
+
+    /* 2. Typographic Line Masks (Título Monumental Hero) */
+    .line-mask {
+      display: block;
+      overflow: hidden;
+    }
+    .line-mask > .hero-title-line {
+      display: block;
+      transform: translateY(105%);
+      transition: transform 850ms var(--ease-out-expo);
+      will-change: transform;
+    }
+    .hero-title-line.is-visible {
+      transform: translateY(0%);
+    }
+
+    /* Interlúdio Arquivístico Editorial Robusto */
+    .interlude-quote {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+    }
+    .quote-line {
+      display: block;
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 800ms var(--ease-out-editorial), transform 850ms var(--ease-out-expo);
+      will-change: opacity, transform;
+    }
+    .interlude-active .quote-line,
+    .interlude-quote.is-visible .quote-line,
+    .reveal-on-scroll.is-visible .quote-line {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .quote-line-1 { transition-delay: 80ms; }
+    .quote-line-2 { transition-delay: 240ms; }
+    .quote-line-3 { transition-delay: 400ms; }
+
+    /* Caligrafia Cursiva Sobreposta em Português: "mão" */
+    .interlude-script-hand {
+      font-family: 'Alex Brush', cursive;
+      font-size: clamp(48px, 8vw, 120px);
+      line-height: 1;
+      color: #9A803D;
+      text-shadow: 0 4px 28px rgba(18, 19, 15, 0.95);
+      position: absolute;
+      left: 50%;
+      bottom: -18px;
+      transform: translate(-50%, 0) rotate(-4deg);
+      opacity: 0;
+      filter: blur(3px);
+      transition: opacity 900ms var(--ease-out-editorial), filter 900ms var(--ease-out-editorial), transform 900ms var(--ease-out-expo);
+      pointer-events: none;
+      z-index: 20;
+      white-space: nowrap;
+    }
+    .interlude-active .interlude-script-hand,
+    .interlude-quote.is-visible .interlude-script-hand,
+    .reveal-on-scroll.is-visible .interlude-script-hand {
+      opacity: 0.95;
+      filter: blur(0px);
+      transition-delay: 560ms;
+    }
+
+    /* 3. Calligraphic Script Interference Hero */
+    .script-overlay {
+      opacity: 0;
+      clip-path: inset(0 100% 0 0);
+      transition: clip-path 900ms var(--ease-out-editorial), opacity 500ms ease;
+      will-change: clip-path, opacity;
+    }
+    .script-overlay.is-visible {
+      opacity: 0.95;
+      clip-path: inset(0 0 0 0);
+    }
+
+    /* 4. Hairline Drawing (Linhas que convergem ao diamante) */
+    .hairline-draw-left {
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 650ms var(--ease-out-editorial);
+      will-change: transform;
+    }
+    .hairline-draw-right {
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 650ms var(--ease-out-editorial);
+      will-change: transform;
+    }
+    .archive-rule.is-visible .hairline-draw-left,
+    .archive-rule.is-visible .hairline-draw-right,
+    .interlude-active .hairline-draw-left,
+    .interlude-active .hairline-draw-right {
+      transform: scaleX(1);
+      transition-delay: 650ms;
+    }
+
+    /* 5. Botanical Ornament Stagger (✣ ✣ ✣ ✣) */
+    .glyph-stagger span {
+      opacity: 0;
+      transform: scale(0.96);
+      transition: opacity 400ms ease, transform 400ms var(--ease-out-editorial);
+    }
+    .glyph-stagger.is-visible span:nth-child(1) { opacity: 0.8; transform: scale(1); transition-delay: 0ms; }
+    .glyph-stagger.is-visible span:nth-child(2) { opacity: 0.8; transform: scale(1); transition-delay: 80ms; }
+    .glyph-stagger.is-visible span:nth-child(3) { opacity: 0.8; transform: scale(1); transition-delay: 160ms; }
+    .glyph-stagger.is-visible span:nth-child(4) { opacity: 0.8; transform: scale(1); transition-delay: 240ms; }
+
+    /* 6. Metadata & CTA Fade */
+    .meta-fade {
+      opacity: 0;
+      transform: translateY(4px);
+      transition: opacity 350ms var(--ease-out-editorial), transform 350ms var(--ease-out-editorial);
+      will-change: opacity, transform;
+    }
+    .meta-fade.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* 7. Scroll Reveal: Crop Fotográfico Editorial */
+    .archival-crop-reveal {
+      clip-path: inset(0 0 12% 0);
+      opacity: 0.5;
+      transform: scale(1.02);
+      transition: clip-path 1100ms var(--ease-out-expo), opacity 900ms ease, transform 1200ms var(--ease-out-expo);
+      will-change: clip-path, opacity, transform;
+    }
+    .archival-crop-reveal.is-visible {
+      clip-path: inset(0 0 0 0);
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* 8. Galeria Subterrânea: Iluminação Reveladora */
+    .gallery-light-reveal {
+      filter: brightness(0.65) contrast(1.1);
+      opacity: 0.75;
+      transition: filter 1300ms var(--ease-out-editorial), opacity 1000ms var(--ease-out-editorial);
+      will-change: filter, opacity;
+    }
+    .gallery-light-reveal.is-visible {
+      filter: brightness(0.88) contrast(1.12);
+      opacity: 1;
+    }
+
+    /* ─────────────────────────────────────────────────────────────
+       9. SISTEMA GERAL DE SCROLL REVEAL (Todas as Seções do Site)
+       ───────────────────────────────────────────────────────────── */
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 800ms var(--ease-out-editorial), transform 850ms var(--ease-out-expo);
+      will-change: opacity, transform;
+    }
+    .reveal-on-scroll.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Variação Suave Apenas Opacidade */
+    .reveal-fade-in {
+      opacity: 0;
+      transition: opacity 800ms var(--ease-out-editorial);
+      will-change: opacity;
+    }
+    .reveal-fade-in.is-visible {
+      opacity: 1;
+    }
+
+    /* Linhas Horizontais que se Desdobram */
+    .reveal-line-h {
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 750ms var(--ease-out-editorial);
+      will-change: transform;
+    }
+    .reveal-line-h.is-visible {
+      transform: scaleX(1);
+    }
+
+    /* Revelação em Cascata (Stagger Group) */
+    .reveal-stagger-group .stagger-item {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 600ms var(--ease-out-editorial), transform 650ms var(--ease-out-expo);
+      will-change: opacity, transform;
+    }
+    .reveal-stagger-group.is-visible .stagger-item:nth-child(1) { opacity: 1; transform: translateY(0); transition-delay: 40ms; }
+    .reveal-stagger-group.is-visible .stagger-item:nth-child(2) { opacity: 1; transform: translateY(0); transition-delay: 100ms; }
+    .reveal-stagger-group.is-visible .stagger-item:nth-child(3) { opacity: 1; transform: translateY(0); transition-delay: 160ms; }
+    .reveal-stagger-group.is-visible .stagger-item:nth-child(4) { opacity: 1; transform: translateY(0); transition-delay: 220ms; }
+    .reveal-stagger-group.is-visible .stagger-item:nth-child(5) { opacity: 1; transform: translateY(0); transition-delay: 280ms; }
+    .reveal-stagger-group.is-visible .stagger-item:nth-child(6) { opacity: 1; transform: translateY(0); transition-delay: 340ms; }
+
+    /* ─────────────────────────────────────────────────────────────
+       10. HOVERS ENRIQUECIDOS E TÁTEIS (Todas as Seções)
+       ───────────────────────────────────────────────────────────── */
+    /* Container de Obra com Elevação e Sombra Editorial */
+    .archival-card {
+      transition: transform 0.5s var(--ease-out-expo), box-shadow 0.5s var(--ease-out-expo), border-color 0.4s ease;
+    }
+    .archival-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.75);
+    }
+    .archival-card:hover .crosshair-corner::before,
+    .archival-card:hover .crosshair-corner::after {
+      border-color: #9A803D !important;
+    }
+
+    /* Imagem de Arquivo com Resposta Sensível e Tátil */
+    .archival-img {
+      transition: filter 0.75s var(--ease-out-expo), transform 0.75s var(--ease-out-expo);
+    }
+    .archival-card:hover .archival-img,
+    .archival-img:hover {
+      filter: contrast(1.14) brightness(1.04) saturate(1.06);
+      transform: scale(1.024);
+    }
+
+    /* Botões Editoriais e de Laudo com Underline Expandido em Ouro */
+    .action-btn-editorial {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: color 0.3s ease;
+    }
+    .action-btn-editorial::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0%;
+      height: 1px;
+      background-color: #9A803D;
+      transition: width 0.4s var(--ease-out-editorial);
+    }
+    .action-btn-editorial:hover::after {
+      width: 100%;
+    }
+    .action-btn-editorial:hover .arrow-move {
+      transform: translateX(5px);
+    }
+    .arrow-move {
+      transition: transform 0.3s var(--ease-out-editorial);
+      display: inline-block;
+    }
+
+    /* Linhas de Tabela Interativas */
+    .table-row-archival {
+      transition: background-color 0.25s ease, border-color 0.25s ease;
+      position: relative;
+    }
+    .table-row-archival:hover {
+      background-color: rgba(28, 29, 24, 0.85);
+    }
+    .table-row-archival:hover td:first-child {
+      color: #EFEFD6;
+      text-shadow: 0 0 10px rgba(154, 128, 61, 0.4);
+    }
+
+    /* Linhas do Ledger com Iluminação e Borda */
+    .ledger-row-archival {
+      position: relative;
+      transition: background-color 0.35s var(--ease-out-editorial), padding-left 0.35s var(--ease-out-editorial);
+    }
+    .ledger-row-archival::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 0;
+      background-color: #9A803D;
+      transition: width 0.35s var(--ease-out-editorial);
+    }
+    .ledger-row-archival:hover {
+      background-color: rgba(28, 29, 24, 0.7);
+      padding-left: 0.85rem;
+    }
+    .ledger-row-archival:hover::before {
+      width: 2px;
+    }
+    .ledger-row-archival:hover .ledger-num {
+      color: #9A803D;
+      transform: translateX(4px);
+    }
+    .ledger-num {
+      transition: color 0.3s ease, transform 0.3s var(--ease-out-editorial);
+      display: inline-block;
+    }
+
+    /* ─────────────────────────────────────────────────────────────
+       CINEMATIC & REACT BITS MOTION SYSTEM (animacoes2.md)
+       ───────────────────────────────────────────────────────────── */
+
+    /* 1. Hero Midground: Feixe de Luz de Museu (Museum Spotlight Beam) */
+    .museum-beam {
+      background: radial-gradient(
+        ellipse 75% 55% at var(--beam-x, 50%) var(--beam-y, 45%),
+        rgba(154, 128, 61, 0.16) 0%,
+        rgba(154, 128, 61, 0.05) 45%,
+        transparent 75%
+      );
+      mix-blend-mode: screen;
+      pointer-events: none;
+      will-change: background, transform;
+      transition: opacity 1.2s var(--ease-out-editorial);
+    }
+
+    /* Grade Milimétrica de Coordenadas Arquivísticas */
+    .archival-coordinate-grid {
+      background-size: 72px 72px;
+      background-image: 
+        linear-gradient(to right, rgba(216, 216, 187, 0.035) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(216, 216, 187, 0.035) 1px, transparent 1px);
+      pointer-events: none;
+      will-change: transform;
+    }
+
+    /* 2. Blur-to-Focus Reveal Cinematográfico */
+    .blur-focus-reveal {
+      opacity: 0;
+      filter: blur(14px);
+      transform: scale(0.985);
+      transition: opacity 1000ms var(--ease-out-editorial),
+                  filter 1100ms var(--ease-out-editorial),
+                  transform 1100ms var(--ease-out-expo);
+      will-change: opacity, filter, transform;
+    }
+    .blur-focus-reveal.is-visible {
+      opacity: 1;
+      filter: blur(0px);
+      transform: scale(1);
+    }
+
+    /* Brilho Sutil de Folha de Ouro (Shiny Gold Badge) */
+    .shiny-gold-badge {
+      position: relative;
+      overflow: hidden;
+      display: inline-flex;
+    }
+    .shiny-gold-badge::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(239, 239, 214, 0.28),
+        rgba(154, 128, 61, 0.45),
+        transparent
+      );
+      transform: skewX(-25deg);
+      pointer-events: none;
+      animation: goldSheen 9s infinite ease-in-out;
+    }
+    @keyframes goldSheen {
+      0%, 75% { left: -100%; opacity: 0; }
+      80% { opacity: 1; }
+      100% { left: 200%; opacity: 0; }
+    }
+
+    /* 3. React Bits: Spotlight Card (cards que respondem ao cursor) */
+    .spotlight-card {
+      position: relative;
+      overflow: hidden;
+    }
+    .spotlight-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(
+        420px circle at var(--mouse-x, -500px) var(--mouse-y, -500px),
+        rgba(154, 128, 61, 0.15),
+        transparent 70%
+      );
+      opacity: 0;
+      transition: opacity 0.45s ease;
+      pointer-events: none;
+      z-index: 15;
+    }
+    .spotlight-card:hover::before {
+      opacity: 1;
+    }
+
+    /* 4. React Bits: Tilted Card com Perspectiva Física Controlada (2.5° max) */
+    .tilted-card {
+      transform-style: preserve-3d;
+      perspective: 1000px;
+      transition: transform 0.35s var(--ease-out-expo), box-shadow 0.4s ease;
+      will-change: transform;
+    }
+
+    /* 5. React Bits: Magnetic Button com Microatração */
+    .magnetic-btn {
+      display: inline-flex;
+      transition: transform 0.28s var(--ease-out-expo), background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+      will-change: transform;
+    }
+
+    /* 6. Retículo Técnico Contextual para Obras */
+    #archival-reticle {
+      position: fixed;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.22s ease, transform 0.12s ease-out;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Space Mono', monospace;
+      font-size: 8.5px;
+      letter-spacing: 0.16em;
+      color: #EFEFD6;
+      background: rgba(18, 19, 15, 0.92);
+      border: 1px solid rgba(154, 128, 61, 0.65);
+      padding: 4px 8px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.85);
+      backdrop-filter: blur(4px);
+    }
+    #archival-reticle.is-active {
+      opacity: 1;
+    }
+    #archival-reticle::before {
+      content: '+';
+      color: #9A803D;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body class="bg-charcoal-deep text-ivory-base antialiased selection:bg-ivory-base selection:text-charcoal-deep film-grain relative">
+
+  <!-- INÍCIO: Faixa de Status Arquivístico & Conservação Preventiva -->
+  <aside class="hairline-b bg-charcoal-tint py-2.5 px-4 md:px-12 meta-micro text-ivory-muted flex flex-wrap justify-between items-center gap-y-2 select-none" data-purpose="status-ribbon">
+    <div class="flex items-center space-x-3">
+      <span class="inline-block w-1.5 h-1.5 bg-gold-accent animate-pulse"></span>
+      <span class="text-ivory-base font-bold">MUSEU NOCTURNE</span>
+      <span class="text-ivory-muted/60">/</span>
+      <span>ARQUIVO CENTRAL DE MATÉRIA &amp; TEMPO</span>
+    </div>
+
+    <div class="hidden lg:flex items-center space-x-6">
+      <span>PORTO ALEGRE / BR</span>
+      <span class="text-gold-accent">◆</span>
+      <span>FUND. 1987</span>
+      <span class="text-gold-accent">◆</span>
+      <span>ABERTO 10:00—18:00</span>
+      <span class="text-gold-accent">◆</span>
+      <span>SALAS 04 + 05 — CLIMATIZADO: 19°C | 48% UR</span>
+    </div>
+
+    <div class="flex items-center space-x-3">
+      <span class="text-gold-accent">●</span>
+      <span class="text-ivory-light">EXPOSIÇÃO 034 / 2026</span>
+    </div>
+  </aside>
+  <!-- FIM: Faixa de Status Arquivístico & Conservação Preventiva -->
+
+  <!-- INÍCIO: Cabeçalho Editorial Silencioso -->
+  <header class="sticky top-0 z-40 bg-[#12130F]/95 backdrop-blur-md hairline-b" data-purpose="editorial-header">
+    <div class="w-full px-4 md:px-12 py-5 flex items-center justify-between">
+      <!-- Esquerda: Título Institucional -->
+      <a class="flex flex-col group focus:outline-none" href="#hero">
+        <span class="font-monumental text-lg md:text-xl tracking-[0.24em] font-bold text-ivory-base group-hover:text-gold-accent transition-colors">
+          MUSEU NOCTURNE
+        </span>
+        <span class="meta-micro text-ivory-muted tracking-[0.22em] mt-0.5">
+          PORTO ALEGRE / BR — FUNDADO EM 1987
+        </span>
+      </a>
+
+      <!-- Centro: Navegação Silenciosa Editorial Master V3 -->
+      <nav class="hidden xl:flex items-center space-x-6 lg:space-x-7 meta-mono text-ivory-muted" data-purpose="main-nav">
+        <a class="hover:text-ivory-base editorial-hover-line transition-colors pb-1 flex items-center gap-1" href="#manifesto">
+          <span class="text-[8px] text-gold-accent">01.</span>
+          <span>MANIFESTO</span>
+        </a>
+        <a class="hover:text-ivory-base editorial-hover-line transition-colors pb-1 flex items-center gap-1" href="#exhibition">
+          <span class="text-[8px] text-gold-accent">02.</span>
+          <span>EXPOSIÇÃO</span>
+        </a>
+        <a class="hover:text-ivory-base editorial-hover-line transition-colors pb-1 flex items-center gap-1" href="#collection">
+          <span class="text-[8px] text-gold-accent">03.</span>
+          <span>ACERVO</span>
+        </a>
+        <a class="hover:text-ivory-base editorial-hover-line transition-colors pb-1 flex items-center gap-1" href="#autoridade">
+          <span class="text-[8px] text-gold-accent">04.</span>
+          <span>AUTORIDADE</span>
+        </a>
+        <a class="hover:text-ivory-base editorial-hover-line transition-colors pb-1 flex items-center gap-1" href="#metodo">
+          <span class="text-[8px] text-gold-accent">05.</span>
+          <span>MÉTODO</span>
+        </a>
+        <a class="hover:text-ivory-base editorial-hover-line transition-colors pb-1 flex items-center gap-1" href="#visit">
+          <span class="text-[8px] text-gold-accent">06.</span>
+          <span>VISITAÇÃO</span>
+        </a>
+        <a class="hover:text-ivory-base editorial-hover-line transition-colors pb-1 flex items-center gap-1" href="#faq">
+          <span class="text-[8px] text-gold-accent">07.</span>
+          <span>FAQ</span>
+        </a>
+      </nav>
+
+      <!-- Direita: Indicador de Horário & Ingressos -->
+      <div class="flex items-center space-x-5 text-right">
+        <div class="hidden sm:block">
+          <div class="meta-mono text-ivory-base font-bold">
+            EXP. 034 <span class="text-gold-accent">/</span> 2026
+          </div>
+          <div class="meta-micro text-ivory-muted mt-0.5">
+            HOJE: 10:00—18:00
+          </div>
+        </div>
+
+        <a class="inline-flex items-center space-x-2 text-[9.5px] font-mono tracking-[0.2em] uppercase text-ivory-base border border-ivory-border px-3.5 py-2 hover:bg-ivory-base hover:text-charcoal-deep transition-all" href="#ingressos">
+          <span>INGRESSOS</span>
+          <span class="text-gold-accent text-xs">→</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- FIM: Cabeçalho Editorial Silencioso -->
+
+  <main>
+    <!-- INÍCIO: Seção Hero (Banner Editorial Centralizado 90-100vh) -->
+    <section class="relative min-h-[calc(100vh-5.5rem)] flex flex-col justify-between hairline-b overflow-hidden" data-purpose="hero-poster" id="hero">
+      
+      <!-- CAMADA 1: Background — Vídeo Cinematográfico de Fundo com Efeito Loop Ida e Volta (Ping-Pong) e Máscara Editorial -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none z-0" aria-hidden="true">
+        <video 
+          autoplay 
+          muted 
+          loop 
+          playsinline 
+          poster="./assets/hero_artwork.jpg"
+          class="w-full h-full object-cover object-center hero-image-reveal grayscale-[12%] contrast-[1.12]"
+          id="hero-main-photo"
+        >
+          <source src="./assets/video_hero_loop.mp4" type="video/mp4"/>
+        </video>
+        <!-- Overlay Multicamadas Escuro para Contraste Editorial e Leitura Nítida -->
+        <div class="absolute inset-0 bg-[#12130F]/80"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#12130F] via-transparent to-[#12130F]/90"></div>
+      </div>
+
+      <!-- CAMADA 2: Midground — Feixe de Luz Curatorial, Poeira Mineral em Suspensão e Grade Milimétrica -->
+      <div class="absolute inset-0 pointer-events-none z-10 overflow-hidden" aria-hidden="true">
+        <!-- Feixe de Luz Direcional de Museu (Spotlight / Museum Beam) -->
+        <div id="hero-spotlight-beam" class="absolute inset-0 museum-beam opacity-75 transition-transform duration-700 ease-out"></div>
+        <!-- Poeira Mineral / Micro-Partículas em Suspensão Browniana Lenta -->
+        <canvas id="hero-dust-canvas" class="absolute inset-0 w-full h-full opacity-60"></canvas>
+        <!-- Grade Ortogonal e Coordenadas de Enquadramento Arquivístico -->
+        <div id="hero-grid-layer" class="absolute inset-0 archival-coordinate-grid opacity-30 transition-transform duration-500 ease-out"></div>
+      </div>
+
+      <!-- Cruzetas Técnicas de Canto no Banner Editorial -->
+      <div class="absolute inset-4 md:inset-8 pointer-events-none crosshair-corner z-20 opacity-70" aria-hidden="true"></div>
+
+      <!-- Faixa Superior de Catalogação -->
+      <div class="relative z-20 hairline-b bg-charcoal-deep/80 backdrop-blur-sm px-4 md:px-12 py-3 flex flex-wrap justify-between items-center meta-micro text-ivory-muted gap-y-2">
+        <div class="flex items-center space-x-3">
+          <span class="text-gold-accent font-bold">034</span>
+          <span>EXPOSIÇÃO ATUAL</span>
+          <span class="text-ivory-muted/40">/</span>
+          <span>SALA 04</span>
+        </div>
+        <div class="flex items-center space-x-4">
+          <span class="decrypted-text font-mono text-ivory-light" data-value="MNT / EXP-034">MNT / EXP-034</span>
+          <span class="text-gold-accent">◆</span>
+          <span>ESTUDO DE OBJETO</span>
+          <span class="text-gold-accent">◆</span>
+          <span>REF. DE ARQUIVO 2026.04</span>
+        </div>
+        <div class="hidden sm:block text-right">
+          <span>PORTO ALEGRE / BR</span>
+        </div>
+      </div>
+
+      <!-- CAMADA 3: Foreground — Diagramação Central do Banner: Conteúdo Perfeitamente Centralizado -->
+      <div class="relative z-30 w-full max-w-4xl mx-auto px-4 py-12 md:py-16 flex flex-col items-center justify-center text-center my-auto">
+        
+        <!-- Cabeçalho Micro de Exposição com Indicador em Ouro e Brilho Sutil -->
+        <div class="meta-micro text-gold-accent mb-4 flex items-center justify-center gap-3 meta-fade" id="hero-index-tag">
+          <span class="w-6 h-[1px] bg-gold-accent/50 inline-block"></span>
+          <span class="shiny-gold-badge px-2 py-0.5 border border-gold-accent/30 tracking-[0.22em]">
+            <span class="decrypted-text" data-value="EXPOSIÇÃO 034 — 2026 — 2027">EXPOSIÇÃO 034 — 2026 — 2027</span>
+          </span>
+          <span class="w-6 h-[1px] bg-gold-accent/50 inline-block"></span>
+        </div>
+
+        <!-- Título Monumental Centralizado com Line-Mask e Intervenção Caligráfica -->
+        <div class="relative select-none pb-3 mb-2 w-full">
+          <h1 class="monumental-hero-title text-ivory-light text-center">
+            <span class="line-mask">
+              <span class="hero-title-line">A MEMÓRIA</span>
+            </span>
+            <span class="line-mask">
+              <span class="hero-title-line text-ivory-muted/90 font-medium">DAS COISAS</span>
+            </span>
+          </h1>
+
+          <!-- Intervenção Caligráfica Suavemente Ancorada ao Centro -->
+          <div class="calligraphic-overlap script-overlay absolute -top-5 sm:-top-7 right-1/2 translate-x-32 sm:translate-x-44 select-none" id="hero-script" aria-hidden="true">
+            memória
+          </div>
+        </div>
+
+        <!-- Divisor Ornamental com Diamante: ──────────── ◆ ──────────── -->
+        <div class="w-full max-w-md flex items-center justify-center my-5 text-ivory-border archive-rule" id="hero-rule" aria-hidden="true">
+          <span class="flex-grow h-[1px] bg-ivory-border hairline-draw-left"></span>
+          <span class="px-3 text-gold-accent text-xs select-none">◆</span>
+          <span class="flex-grow h-[1px] bg-ivory-border hairline-draw-right"></span>
+        </div>
+
+        <!-- Ensaio Curatorial Sintético Centralizado com Blur-to-Focus Reveal -->
+        <p class="font-serif text-lg sm:text-xl md:text-2xl text-ivory-light/95 italic leading-relaxed max-w-2xl mx-auto mb-8 font-light meta-fade blur-focus-reveal" id="hero-quote">
+          “Uma investigação sobre a persistência dos afetos retidos no linho desgastado, no mármore e na poeira mineral. O objeto não é mudo: ele retém a temperatura das mãos que o tocaram.”
+        </p>
+
+        <!-- Cápsula com Coordenadas de Sala Centralizada -->
+        <div class="grid grid-cols-3 hairline-all bg-charcoal-deep/90 backdrop-blur-sm text-center divide-x divide-ivory-border max-w-lg w-full mb-8 meta-fade" id="hero-capsule">
+          <div class="py-3 px-2">
+            <span class="meta-micro block text-ivory-muted text-[7.5px] mb-0.5">PERÍODO</span>
+            <span class="font-serif text-sm sm:text-base text-ivory-light font-medium">23.09 — 14.02</span>
+          </div>
+          <div class="py-3 px-2">
+            <span class="meta-micro block text-ivory-muted text-[7.5px] mb-0.5">SALA</span>
+            <span class="font-serif text-sm sm:text-base text-ivory-light font-medium">SALA 04 + 05</span>
+          </div>
+          <div class="py-3 px-2">
+            <span class="meta-micro block text-ivory-muted text-[7.5px] mb-0.5">COLEÇÃO</span>
+            <span class="font-serif text-sm sm:text-base text-gold-accent font-medium">PERMANENTE</span>
+          </div>
+        </div>
+
+        <!-- Links Editoriais e Botões Centralizados com Microatração Magnética -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-6 meta-fade w-full" id="hero-cta">
+          <a class="action-btn-editorial magnetic-btn inline-flex items-center space-x-3 meta-mono text-xs text-charcoal-deep bg-ivory-base border border-ivory-base px-6 py-3 hover:bg-gold-accent hover:border-gold-accent hover:text-charcoal-deep font-bold transition-all" href="#exhibition">
+            <span>EXPLORAR EXPOSIÇÃO</span>
+            <span class="arrow-move text-charcoal-deep">→</span>
+          </a>
+
+          <button class="action-btn-editorial magnetic-btn meta-mono text-xs text-ivory-base border border-ivory-border px-6 py-3 hover:border-gold-accent hover:text-gold-accent transition-all cursor-pointer" onclick="openArchivalModal('MNT-034')">
+            <span>[ CONSULTAR LAUDO DO ACERVO ]</span>
+          </button>
+        </div>
+
+        <!-- Faixa de Glifos Decorativos com Stagger -->
+        <div class="mt-8 flex items-center justify-center space-x-4 text-gold-accent/80 select-none glyph-stagger text-sm" id="hero-glyphs" aria-hidden="true">
+          <span>✣</span>
+          <span>✣</span>
+          <span>✣</span>
+          <span>✣</span>
+        </div>
+
+      </div>
+
+      <!-- Faixa Inferior de Ficha Técnica -->
+      <div class="relative z-20 hairline-t bg-charcoal-deep/80 backdrop-blur-sm py-3 px-4 md:px-12 meta-micro text-ivory-muted flex flex-wrap justify-between items-center gap-y-2">
+        <div><span class="text-gold-accent mr-1">01.</span> CURADORIA: HELENA MOREIRA</div>
+        <div><span class="text-gold-accent mr-1">02.</span> REGIME: PRESERVAÇÃO ESTRITA</div>
+        <div class="hidden md:block"><span class="text-gold-accent mr-1">03.</span> FOTOGRAFIA: 35MM NITRATO</div>
+        <div class="text-right"><span class="text-gold-accent mr-1">04.</span> EDITAL Nº 2026/034</div>
+      </div>
+
+    </section>
+    <!-- FIM: Seção Hero -->
+
+    <!-- INÍCIO: Seção 02 — Manifesto / Contexto ("Por Que o Arquivo Existe" - Mastrer3.md Seção 21) -->
+    <section class="py-24 md:py-36 px-4 md:px-12 max-w-7xl mx-auto hairline-b relative" data-purpose="archival-manifesto" id="manifesto">
+      
+      <!-- Índice da Seção & Metadados de Cabeçalho -->
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center pb-6 mb-12 hairline-b gap-3 meta-micro text-ivory-muted reveal-on-scroll">
+        <div class="flex items-center space-x-3">
+          <span class="text-gold-accent font-bold">/ 02</span>
+          <span class="text-ivory-light font-medium tracking-[0.24em]">MANIFESTO EDITORIAL</span>
+          <span class="text-ivory-border">/</span>
+          <span>POR QUE O ARQUIVO EXISTE</span>
+        </div>
+        <div>
+          <span>PROTOCOLO MNT / EDITORIAL Nº 002</span>
+        </div>
+      </div>
+
+      <!-- Grande Afirmação Monumental com Tipografia Editorial de Alto Contraste -->
+      <div class="max-w-5xl mx-auto text-center py-6 reveal-on-scroll">
+        <h2 class="font-display text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-ivory-light leading-[1.06] tracking-tight uppercase font-light">
+          Preservamos a matéria contra o <span class="font-normal italic text-gold-accent font-serif lowercase">esquecimento</span> do tempo digital.
+        </h2>
+
+        <!-- Divisor com Diamante Central: ──────────── ◆ ──────────── -->
+        <div class="flex items-center justify-center space-x-4 my-10 text-ivory-border archive-rule" aria-hidden="true">
+          <span class="w-20 sm:w-32 h-[1px] bg-ivory-border hairline-draw-left"></span>
+          <span class="text-gold-accent text-xs select-none">◆</span>
+          <span class="w-20 sm:w-32 h-[1px] bg-ivory-border hairline-draw-right"></span>
+        </div>
+
+        <!-- Cópia Explicativa Curatorial de Alta Densidade -->
+        <p class="font-serif text-lg sm:text-xl md:text-2xl text-ivory-muted max-w-3xl mx-auto leading-relaxed font-light italic">
+          “Em uma época de saturação efêmera, o Museu Nocturne resguarda aquilo que não pode ser replicado em tela: a espessura do mármore gretado, o veludo puído pelas orações e a poeira mineral que sedimentou séculos. O objeto físico não é adorno do passado: é a única âncora tangível da memória.”
+        </p>
+
+        <!-- Selo de Colofão Curatorial -->
+        <div class="mt-8 flex items-center justify-center space-x-4 meta-micro text-ivory-muted/70">
+          <span>CURADORIA CENTRAL</span>
+          <span class="text-gold-accent">●</span>
+          <span>PORTO ALEGRE / BR — MMXXVI</span>
+        </div>
+      </div>
+
+    </section>
+    <!-- FIM: Seção 02 — Manifesto -->
+
+    <!-- INÍCIO: Seção 03 — Pilares & Diferenciais Arquivísticos (Mastrer3.md Seção 22) -->
+    <section class="py-24 md:py-32 px-4 md:px-12 max-w-7xl mx-auto hairline-b" data-purpose="archival-differentials" id="diferenciais">
+      
+      <!-- Cabeçalho da Seção com Revelação Editorial -->
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 pb-4 hairline-b gap-4 reveal-on-scroll">
+        <div>
+          <div class="meta-micro text-gold-accent mb-2 tracking-[0.25em]">/ 03 — PILARES TÉCNICOS</div>
+          <h2 class="font-display text-3xl md:text-5xl uppercase tracking-tight text-ivory-light">
+            O RIGOR DO ARQUIVO
+          </h2>
+        </div>
+        <div class="meta-micro text-ivory-muted text-right">
+          <span>DIFERENCIAIS DE CONSERVAÇÃO PREVENTIVA</span><br/>
+          <span>DISPOSIÇÃO MODULAR EDITORIAL — ZERO COMPONENTES SAAS</span>
+        </div>
+      </div>
+
+      <!-- Grid Editorial de 3 Módulos com Hairlines e Números Monumentais -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-0 hairline-all divide-y lg:divide-y-0 lg:divide-x divide-ivory-border bg-charcoal-tint/40 reveal-stagger-group">
+        
+        <!-- Diferencial 01: Quarentena Anóxica -->
+        <div class="p-8 sm:p-10 flex flex-col justify-between space-y-8 step-card stagger-item hover:bg-charcoal-tint/90 transition-colors">
+          <div>
+            <div class="flex justify-between items-baseline mb-6">
+              <span class="editorial-step-num">01</span>
+              <span class="meta-micro text-gold-accent">N₂ PURÍSSIMO</span>
+            </div>
+            <h3 class="font-display text-xl sm:text-2xl text-ivory-light uppercase tracking-tight mb-4">
+              Quarentena Anóxica em Nitrogênio
+            </h3>
+            <p class="font-serif text-base text-ivory-muted leading-relaxed font-light">
+              Cada peça recebida permanece 21 dias em câmara desoxigenada (oxigênio residual inferior a 0,1%). Neutralizamos qualquer agente xilófago ou microbiano sem recorrer a biocidas químicos que alterem a matéria original.
+            </p>
+          </div>
+          <div class="pt-6 hairline-t meta-micro text-ivory-muted flex justify-between items-center">
+            <span>MÉTODO: ATMOSFERA MODIFICADA</span>
+            <span class="text-gold-accent">LAUDO N₂</span>
+          </div>
+        </div>
+
+        <!-- Diferencial 02: Penumbra Estabilizada -->
+        <div class="p-8 sm:p-10 flex flex-col justify-between space-y-8 step-card stagger-item hover:bg-charcoal-tint/90 transition-colors">
+          <div>
+            <div class="flex justify-between items-baseline mb-6">
+              <span class="editorial-step-num">02</span>
+              <span class="meta-micro text-gold-accent">≤ 50 LUX</span>
+            </div>
+            <h3 class="font-display text-xl sm:text-2xl text-ivory-light uppercase tracking-tight mb-4">
+              Penumbra Estabilizada &amp; 48% UR
+            </h3>
+            <p class="font-serif text-base text-ivory-muted leading-relaxed font-light">
+              As salas subterrâneas operam sob iluminação direcional fria desprovida de radiação UV/IR. O microclima higroscópico é balanceado passivamente em 48% ± 2% de umidade relativa, resguardando tintas e ligantes minerais.
+            </p>
+          </div>
+          <div class="pt-6 hairline-t meta-micro text-ivory-muted flex justify-between items-center">
+            <span>CLIMA: 19°C CONSTANTE</span>
+            <span class="text-gold-accent">SALA LIMPA</span>
+          </div>
+        </div>
+
+        <!-- Diferencial 03: Laudos Físico-Químicos Abertos -->
+        <div class="p-8 sm:p-10 flex flex-col justify-between space-y-8 step-card stagger-item hover:bg-charcoal-tint/90 transition-colors">
+          <div>
+            <div class="flex justify-between items-baseline mb-6">
+              <span class="editorial-step-num">03</span>
+              <span class="meta-micro text-gold-accent">ESPECTROSCOPIA</span>
+            </div>
+            <h3 class="font-display text-xl sm:text-2xl text-ivory-light uppercase tracking-tight mb-4">
+              Laudos Físico-Químicos Abertos
+            </h3>
+            <p class="font-serif text-base text-ivory-muted leading-relaxed font-light">
+              Rejeitamos o mistério obscurantista: cada obra possui espectrografia Raman, fotografia ultravioleta em luz rasante e histórico de estabilização catalogado em dossiê de acesso aberto para pesquisadores.
+            </p>
+          </div>
+          <div class="pt-6 hairline-t meta-micro text-ivory-muted flex justify-between items-center">
+            <span>ARQUIVO: TOMBO PÚBLICO</span>
+            <span class="text-gold-accent">ACERVO ABERTO</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Fita Inferior de Conexão com a Exposição -->
+      <div class="mt-8 flex flex-wrap justify-between items-center meta-micro text-ivory-muted pt-2 reveal-on-scroll">
+        <div class="flex items-center space-x-2">
+          <span class="text-gold-accent">◆</span>
+          <span>TODOS OS PROCEDIMENTOS CONFORME MANUAL ICOM DE CONSERVAÇÃO</span>
+        </div>
+        <a class="action-btn-editorial text-ivory-base hover:text-gold-accent" href="#exhibition">
+          <span>VER APLICAÇÃO NA EXPOSIÇÃO 034</span>
+          <span class="arrow-move text-gold-accent">→</span>
+        </a>
+      </div>
+
+    </section>
+    <!-- FIM: Seção 03 — Diferenciais -->
+
+    <!-- INÍCIO: Seção Exposição Atual ("A MEMÓRIA DAS COISAS") -->
+    <section class="py-20 md:py-32 px-4 md:px-12 max-w-7xl mx-auto hairline-b" data-purpose="current-exhibition" id="exhibition">
+      
+      <!-- Cabeçalho da Seção com Revelação Editorial no Scroll -->
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 pb-4 hairline-b gap-4 reveal-on-scroll">
+        <div>
+          <div class="meta-micro text-gold-accent mb-2 tracking-[0.25em]">/ EXPOSIÇÃO 034</div>
+          <h2 class="font-display text-3xl md:text-5xl uppercase tracking-tight text-ivory-light">
+            A MEMÓRIA DAS COISAS
+          </h2>
+        </div>
+        <div class="meta-micro text-ivory-muted text-right">
+          <span>CURADORIA: HELENA MOREIRA</span><br/>
+          <span>SALAS 04 + 05 — 23 SET 2026 A 14 FEV 2027</span>
+        </div>
+      </div>
+
+      <!-- Grid Assimétrico 7/5 -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        
+        <!-- 7 Colunas da Esquerda: Fotografia Detalhada de Mármore e Linho com Archival Card e Crop Reveal -->
+        <div class="lg:col-span-7 relative reveal-on-scroll">
+          <figure class="hairline-all bg-charcoal-tint p-3 md:p-5 crosshair-corner archival-card spotlight-card tilted-card" aria-label="Placa Curatorial A-034/1">
+            <div class="flex justify-between meta-micro text-ivory-muted pb-2">
+              <span>PLACA CURATORIAL A-034/1</span>
+              <span class="text-gold-accent">ESCULTURA, LINHO &amp; RESINA</span>
+            </div>
+            
+            <div class="relative overflow-hidden aspect-[4/3] bg-[#0A0B08] hairline-all mb-4">
+              <img 
+                alt="Detalhe de escultura em mármore desgastado envolta por tecido rendado com espécimes botânicos secos"
+                class="w-full h-full object-cover archival-img archival-crop-reveal"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw1-UVvBynsXbmjF9nJzavI9-CRZcuP9X9i4Wxi_DGjwJd1h5Z1ScXZsh5asqBXx4H2SNwospSczhEGD189PBn74BzLmpq6AwPiMn4DTQ69aHIur14Bl1j9LxAdOLCay6qkqS7eBXNf28Z0LCgNawLgh_BNt6lW3Kf3hTFVksyNM7m1sPFO1cBtHbZ39HmKtkxCka55Q-N9C4l0lYK9fikMgvmIWYmmrzpLRHnI19iE1B1SwhSndh9"
+                data-reticle="LAUDO TÉCNICO 041"
+              />
+              <div class="absolute bottom-3 left-3 bg-charcoal-deep/90 px-3 py-1 meta-micro text-ivory-base border border-ivory-border">
+                OBJ. Nº 041 / FRAGMENTO DE MÁRMORE — c. 1820
+              </div>
+            </div>
+
+            <!-- Tabela de Inscrição Técnica como figcaption -->
+            <figcaption class="grid grid-cols-2 sm:grid-cols-4 gap-2 meta-micro text-ivory-muted pt-2 hairline-t">
+              <div><span class="text-ivory-base">PROCEDÊNCIA:</span> ROMA</div>
+              <div><span class="text-ivory-base">GRAU PÁTINA:</span> MINERAL IV</div>
+              <div><span class="text-ivory-base">DIMENSÕES:</span> 38×24 CM</div>
+              <div class="text-right text-gold-accent">RESTAURADO 2024</div>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- 5 Colunas da Direita: Ensaio Curatorial & Especificações com Revelação Suave -->
+        <div class="lg:col-span-5 flex flex-col justify-between space-y-8 reveal-on-scroll">
+          <div>
+            <span class="meta-micro text-gold-accent tracking-widest block mb-3">TEXTO CURATORIAL</span>
+            
+            <h3 class="font-serif text-2xl md:text-3xl text-ivory-light font-light mb-5 leading-snug">
+              Objetos que retêm os vestígios das mãos, dos rituais e dos silêncios que os atravessaram.
+            </h3>
+
+            <div class="space-y-4 font-serif text-base text-ivory-muted leading-relaxed">
+              <p>
+                A exposição <strong class="text-ivory-base font-normal">A Memória das Coisas</strong> reúne fragmentos de mármore, têxteis litúrgicos com fios de ouro, caixas relicárias e herbários dos séculos XVI a XIX conservados sob rigorosa penumbra.
+              </p>
+              <p>
+                Ao contrário do museu enciclopédico tradicional que busca purificar a matéria de seu tempo, o Museu Nocturne expõe a matéria viva com suas fissuras, oxidações e pátinas — compreendendo que cada objeto físico funciona como um receptáculo denso de memória imaterial.
+              </p>
+            </div>
+          </div>
+
+          <!-- Coordenadas Estruturadas com Borda Sensível ao Hover -->
+          <div class="hairline-all bg-charcoal-tint p-5 space-y-3 font-mono text-[9px] text-ivory-muted transition-colors hover:border-gold-accent/40">
+            <div class="flex justify-between border-b border-ivory-border/30 pb-2">
+              <span class="text-ivory-base">CURADORIA:</span>
+              <span class="text-ivory-light">HELENA MOREIRA</span>
+            </div>
+            <div class="flex justify-between border-b border-ivory-border/30 pb-2">
+              <span class="text-ivory-base">SALAS DE EXPOSIÇÃO:</span>
+              <span class="text-ivory-light">SALAS 04 + 05 (PISO SUPERIOR)</span>
+            </div>
+            <div class="flex justify-between border-b border-ivory-border/30 pb-2">
+              <span class="text-ivory-base">PERÍODO:</span>
+              <span class="text-gold-accent font-bold">23 SET 2026 — 14 FEV 2027</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-ivory-base">ACESSO:</span>
+              <span>MEDIANTE HORÁRIO MARCADO (MÁX. 25 VISITANTES/SESSÃO)</span>
+            </div>
+          </div>
+
+          <!-- Chamada de Ação com Hovers Táteis -->
+          <div class="flex items-center justify-between">
+            <a class="action-btn-editorial magnetic-btn meta-mono text-ivory-base hover:text-gold-accent" href="#visit">
+              <span>AGENDAR VISITA CURATORIAL</span>
+              <span class="arrow-move text-gold-accent">→</span>
+            </a>
+
+            <button class="action-btn-editorial magnetic-btn meta-micro text-gold-accent cursor-pointer" onclick="openArchivalModal('MNT-041')">
+              <span>[ VER LAUDO TÉCNICO ]</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- FIM: Seção Exposição Atual -->
+
+    <!-- INÍCIO: Seção Acervo Selecionado (Mosaico Editorial Assimétrico com 4 peças) -->
+    <section class="py-20 md:py-32 px-4 md:px-12 max-w-7xl mx-auto hairline-b" data-purpose="selected-collection" id="collection">
+      
+      <!-- Título da Seção com Revelação no Scroll -->
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 pb-4 hairline-b gap-4 reveal-on-scroll">
+        <div>
+          <span class="meta-micro text-gold-accent tracking-[0.25em] block mb-2">SELEÇÃO DO ACERVO PERMANENTE</span>
+          <h2 class="font-display text-3xl md:text-5xl uppercase tracking-tight text-ivory-light">
+            SELECIONADOS<br/>DO ACERVO
+          </h2>
+        </div>
+        <div class="meta-micro text-ivory-muted text-right">
+          <span>CATÁLOGO GERAL DE FORMAS &amp; VESTÍGIOS</span><br/>
+          <span>DISPOSIÇÃO ASSIMÉTRICA EDITORIAL</span>
+        </div>
+      </div>
+
+      <!-- Grade Editorial Assimétrica (4 Obras com dimensões e proporções autorais) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-start">
+        
+        <!-- Obra 1: Formato Retrato Amplo (Cols 1-7) - Objeto 017 com Archival Card -->
+        <article class="lg:col-span-7 flex flex-col group reveal-on-scroll" data-purpose="artwork-017">
+          <figure class="hairline-all bg-charcoal-tint p-3 md:p-4 crosshair-corner archival-card spotlight-card tilted-card" aria-label="Objeto 017: Estudo Sem Título">
+            <div class="relative overflow-hidden aspect-[3/4] bg-[#0C0D0A] hairline-all mb-4">
+              <img 
+                alt="Pintura a óleo c. 1894 em chiaroscuro profundo, mãos pálidas com anéis renascentistas sobre renda e linho escuro"
+                class="w-full h-full object-cover archival-img"
+                src="./assets/object_017.jpg"
+                data-reticle="LAUDO TÉCNICO 017"
+              />
+              <div class="absolute top-3 left-3 bg-charcoal-deep/90 px-2.5 py-1 meta-micro text-ivory-light border border-ivory-border">
+                OBJETO 017
+              </div>
+            </div>
+            
+            <figcaption class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-2 pt-2">
+              <div>
+                <h3 class="font-serif text-2xl text-ivory-light group-hover:text-gold-accent transition-colors">
+                  Estudo Sem Título (Mãos em Prece)
+                </h3>
+                <span class="meta-mono text-ivory-muted text-[9px]">ARTISTA DESCONHECIDO — c. 1894</span>
+              </div>
+              <div class="meta-micro text-ivory-muted text-right">
+                ÓLEO SOBRE LINHO CRU<br/>
+                <button class="action-btn-editorial magnetic-btn text-gold-accent cursor-pointer" onclick="openArchivalModal('MNT-017')">
+                  <span>[CONSULTAR LAUDO MNT-017]</span>
+                  <span class="arrow-move text-xs">→</span>
+                </button>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+
+        <!-- Coluna Lateral: Obra 2 & Obra 3 (Cols 8-12) -->
+        <div class="lg:col-span-5 flex flex-col space-y-12">
+          
+          <!-- Obra 2: Têxtil Horizontal (Objeto 028) com Archival Card -->
+          <article class="group reveal-on-scroll" data-purpose="artwork-028">
+            <figure class="hairline-all bg-charcoal-tint p-3 md:p-4 crosshair-corner archival-card spotlight-card tilted-card" aria-label="Objeto 028: Relicário em Seda e Fios de Ouro">
+              <div class="relative overflow-hidden aspect-[16/10] bg-[#0C0D0A] hairline-all mb-4">
+                <img 
+                  alt="Cofre relicário em veludo negro bordado com fios de seda e filigrana em ouro"
+                  class="w-full h-full object-cover archival-img"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfXXktT6MxDlsFmBKIIpG4qf6_WUR48GitCkZc6pfkyJjtJElPntTZwYZ_X7Lg5O6GednHo6ARHY-uQ8299zKNC-0BTR7KO_JA6TnfRvGAmDIG3C1_1WXC5ZCYiaomQUxL5kS_LXfc9UuEBYSPidYkaPH8NdnqAEr4ExYkHc6cDKqADhRgC1SfTAACeqt7bxobULwgpt8tD8B-gD7H2Hmu51ptuRokp2n4itvvQsa6CkOGl2-L44gD"
+                  data-reticle="LAUDO TÉCNICO 028"
+                />
+                <div class="absolute top-3 left-3 bg-charcoal-deep/90 px-2.5 py-1 meta-micro text-ivory-light border border-ivory-border">
+                  OBJETO 028
+                </div>
+              </div>
+
+              <figcaption class="space-y-1">
+                <div class="flex justify-between items-start">
+                  <div>
+                    <h3 class="font-serif text-xl text-ivory-light group-hover:text-gold-accent transition-colors">
+                      Relicário em Seda &amp; Fios de Ouro
+                    </h3>
+                    <div class="meta-mono text-ivory-muted text-[9px]">PORTUGAL — c. 1770</div>
+                  </div>
+                  <button class="action-btn-editorial magnetic-btn meta-micro text-gold-accent cursor-pointer" onclick="openArchivalModal('MNT-028')">
+                    <span>[LAUDO]</span>
+                  </button>
+                </div>
+                <p class="font-serif italic text-xs text-ivory-muted/90 pt-2 leading-relaxed">
+                  “Fibras de seda selvagem tingidas com fuligem e fiação de ouro 22k confeccionadas em convento bracarense.”
+                </p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <!-- Obra 3: Escultura em Mármore Autêntico (Objeto 041) com Archival Card -->
+          <article class="group reveal-on-scroll" data-purpose="artwork-041">
+            <figure class="hairline-all bg-charcoal-tint p-3 md:p-4 crosshair-corner archival-card spotlight-card tilted-card" aria-label="Objeto 041: Torso e Fragmento de Mármore">
+              <div class="relative overflow-hidden aspect-square bg-[#0C0D0A] hairline-all mb-4">
+                <img 
+                  alt="Fragmento de torso clássico esculpido em mármore carrarense com pátina mineral e iluminação de museu"
+                  class="w-full h-full object-cover archival-img"
+                  src="./assets/object_041.jpg"
+                  data-reticle="LAUDO TÉCNICO 041"
+                />
+                <div class="absolute top-3 left-3 bg-charcoal-deep/90 px-2.5 py-1 meta-micro text-ivory-light border border-ivory-border">
+                  OBJETO 041
+                </div>
+              </div>
+
+              <figcaption class="space-y-1">
+                <div class="flex justify-between items-start">
+                  <div>
+                    <h3 class="font-serif text-xl text-ivory-light group-hover:text-gold-accent transition-colors">
+                      Torso &amp; Fragmento de Mármore
+                    </h3>
+                    <div class="meta-mono text-ivory-muted text-[9px]">ITÁLIA — c. 1820</div>
+                  </div>
+                  <button class="action-btn-editorial magnetic-btn meta-micro text-gold-accent cursor-pointer" onclick="openArchivalModal('MNT-041')">
+                    <span>[LAUDO]</span>
+                  </button>
+                </div>
+                <div class="meta-micro text-gold-accent pt-2">FISSURA MINERAL ESTABILIZADA (PÁTINA IV)</div>
+              </figcaption>
+            </figure>
+          </article>
+
+        </div>
+
+      </div>
+
+      <!-- Obra 4: Formato Panorâmico Horizontal (Objeto 052) com Archival Card -->
+      <div class="mt-14 pt-10 hairline-t reveal-on-scroll">
+        <article data-purpose="artwork-052">
+          <figure class="hairline-all bg-charcoal-tint p-4 md:p-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center group crosshair-corner archival-card spotlight-card tilted-card" aria-label="Objeto 052: Cofre Relicário e Herbário Seco">
+            <div class="lg:col-span-5 relative overflow-hidden aspect-[16/10] bg-[#0A0B08] hairline-all">
+              <img 
+                alt="Cofre relicário em madeira gótica de carvalho esculpido ao lado de herbário com papoulas secas e sementes do século XVI"
+                class="w-full h-full object-cover archival-img"
+                src="./assets/object_052.jpg"
+                data-reticle="LAUDO TÉCNICO 052"
+              />
+              <div class="absolute top-3 left-3 bg-charcoal-deep/90 px-2.5 py-1 meta-micro text-ivory-light border border-ivory-border">
+                OBJETO 052
+              </div>
+            </div>
+
+            <figcaption class="lg:col-span-7 flex flex-col justify-between space-y-4">
+              <div>
+                <div class="meta-micro text-gold-accent mb-1 tracking-widest">COLEÇÃO SACRA &amp; HERBÁRIO</div>
+                <h3 class="font-serif text-2xl md:text-3xl text-ivory-light group-hover:text-gold-accent transition-colors">
+                  Cofre Relicário &amp; Herbário Seco
+                </h3>
+                <div class="meta-mono text-ivory-muted text-[9.5px] mt-1">FLANDRES / FRANÇA — c. 1540</div>
+                
+                <p class="font-serif italic text-sm text-ivory-muted/90 pt-3 leading-relaxed">
+                  “Madeira de carvalho envelhecida, dobradiças em ferro forjado e vestígios botânicos de papoula, sálvia e linho sacro. Inscrição litúrgica gravada na face interna da tampa com pigmento mineral ocre.”
+                </p>
+              </div>
+
+              <div class="flex flex-wrap justify-between items-center pt-3 hairline-t meta-micro text-ivory-muted gap-2">
+                <div>PROCEDÊNCIA: ABADIA DE SAINT-VAAST</div>
+                <div>CONSERVAÇÃO: ANÓXIA 100% PURA</div>
+                <button class="action-btn-editorial magnetic-btn text-gold-accent cursor-pointer font-bold" onclick="openArchivalModal('MNT-052')">
+                  <span>[EXAMINAR LAUDO MNT-052]</span>
+                  <span class="arrow-move text-xs">→</span>
+                </button>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+      </div>
+
+      <!-- Faixa de Repetição Inferior -->
+      <div class="mt-14 hairline-t pt-6 flex flex-wrap justify-between items-center meta-micro text-ivory-muted gap-4 reveal-on-scroll">
+        <div>ACERVO PERMANENTE: 482 ITENS TOMBADOS</div>
+        <div class="flex items-center space-x-2 text-gold-accent" aria-hidden="true">
+          <span>✣</span><span>✣</span><span>✣</span><span>✣</span>
+        </div>
+        <a class="action-btn-editorial text-ivory-base hover:text-gold-accent tracking-widest" href="#archive">
+          <span>CONSULTAR LIVRO DE REGISTRO COMPLETO</span>
+          <span class="arrow-move">→</span>
+        </a>
+      </div>
+
+    </section>
+    <!-- FIM: Seção Acervo Selecionado -->
+
+    <!-- INÍCIO: Seção 05 — Autoridade Institucional & Citações Monográficas (Mastrer3.md Seções 25 e 26) -->
+    <section class="py-24 md:py-36 px-4 md:px-12 max-w-7xl mx-auto hairline-b relative" data-purpose="archival-authority" id="autoridade">
+      
+      <!-- Cabeçalho da Seção com Revelação Editorial -->
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 pb-4 hairline-b gap-4 reveal-on-scroll">
+        <div>
+          <div class="meta-micro text-gold-accent mb-2 tracking-[0.25em]">/ 04 — CREDENCIAIS &amp; HISTÓRIA</div>
+          <h2 class="font-display text-3xl md:text-5xl uppercase tracking-tight text-ivory-light">
+            AUTORIDADE ARQUIVÍSTICA
+          </h2>
+        </div>
+        <div class="meta-micro text-ivory-muted text-right">
+          <span>INSTITUIÇÃO ATIVA DESDE 1987</span><br/>
+          <span>PROTOCOLO DE TOMBAMENTO &amp; PESQUISA MONOGRÁFICA</span>
+        </div>
+      </div>
+
+      <!-- Métricas Reais do Acervo: Grid de 4 Indicadores Hairline (Mastrer3.md Seção 25) -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-0 hairline-all divide-y sm:divide-y-0 divide-x divide-ivory-border bg-charcoal-tint/50 mb-20 reveal-stagger-group">
+        
+        <div class="p-6 md:p-8 flex flex-col justify-between stagger-item hover:bg-charcoal-tint/90 transition-colors">
+          <span class="meta-micro text-ivory-muted mb-4 block">HISTÓRIA CONTÍNUA</span>
+          <div>
+            <div class="font-display text-4xl sm:text-5xl lg:text-6xl text-gold-accent font-bold mb-2">039</div>
+            <span class="meta-micro text-ivory-light font-bold block">ANOS DE ARQUIVO</span>
+            <span class="text-[8.5px] font-mono text-ivory-muted block mt-1">FUNDADO EM 1987 / PORTO ALEGRE</span>
+          </div>
+        </div>
+
+        <div class="p-6 md:p-8 flex flex-col justify-between stagger-item hover:bg-charcoal-tint/90 transition-colors">
+          <span class="meta-micro text-ivory-muted mb-4 block">INVENTÁRIO HOMOLOGADO</span>
+          <div>
+            <div class="font-display text-4xl sm:text-5xl lg:text-6xl text-ivory-light font-bold mb-2">482</div>
+            <span class="meta-micro text-ivory-light font-bold block">PEÇAS TOMBADAS</span>
+            <span class="text-[8.5px] font-mono text-ivory-muted block mt-1">MÁRMORES, TÊXTEIS &amp; HERBÁRIOS</span>
+          </div>
+        </div>
+
+        <div class="p-6 md:p-8 flex flex-col justify-between stagger-item hover:bg-charcoal-tint/90 transition-colors">
+          <span class="meta-micro text-ivory-muted mb-4 block">CLIMATIZAÇÃO ESTREITA</span>
+          <div>
+            <div class="font-display text-4xl sm:text-5xl lg:text-6xl text-gold-accent font-bold mb-2">100%</div>
+            <span class="meta-micro text-ivory-light font-bold block">SALAS A 48% UR</span>
+            <span class="text-[8.5px] font-mono text-ivory-muted block mt-1">ESTABILIDADE TÉRMICA PERMANENTE</span>
+          </div>
+        </div>
+
+        <div class="p-6 md:p-8 flex flex-col justify-between stagger-item hover:bg-charcoal-tint/90 transition-colors">
+          <span class="meta-micro text-ivory-muted mb-4 block">INTERCÂMBIO ACADÊMICO</span>
+          <div>
+            <div class="font-display text-4xl sm:text-5xl lg:text-6xl text-ivory-light font-bold mb-2">014</div>
+            <span class="meta-micro text-ivory-light font-bold block">COOPERAÇÕES TÉCNICAS</span>
+            <span class="text-[8.5px] font-mono text-ivory-muted block mt-1">MOSTEIROS &amp; ARQUIVOS EUROPEUS</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Citações Monográficas Críticas (Mastrer3.md Seção 26: Formato Página de Catálogo) -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
+        
+        <!-- Citação Crítica 01: Dra. Clara Vasconcelos -->
+        <article class="hairline-all bg-charcoal-tint p-8 md:p-10 flex flex-col justify-between crosshair-corner archival-card reveal-on-scroll">
+          <div>
+            <div class="flex justify-between items-center pb-4 hairline-b mb-6 meta-micro text-ivory-muted">
+              <span>EXCERTO DE LAUDO CRÍTICO / REF. 09-B</span>
+              <span class="text-gold-accent">LISBOA / PORTO ALEGRE</span>
+            </div>
+            <blockquote class="font-serif text-xl sm:text-2xl text-ivory-light font-light italic leading-snug mb-8">
+              “O Museu Nocturne trata a degradação não como perda ou ruína, mas como a mais pura caligrafia do tempo gravada na matéria dos homens.”
+            </blockquote>
+          </div>
+          <div class="pt-6 hairline-t meta-micro text-ivory-muted flex justify-between items-end">
+            <div>
+              <span class="text-ivory-base font-bold block text-[10px]">DRA. CLARA VASCONCELOS</span>
+              <span>DIRETORA DO INSTITUTO IBÉRICO DE RESTAURO</span>
+            </div>
+            <span class="text-gold-accent font-mono text-[9px]">PARECER 2025</span>
+          </div>
+        </article>
+
+        <!-- Citação Crítica 02: Prof. Arthur de Menezes -->
+        <article class="hairline-all bg-charcoal-tint p-8 md:p-10 flex flex-col justify-between crosshair-corner archival-card reveal-on-scroll">
+          <div>
+            <div class="flex justify-between items-center pb-4 hairline-b mb-6 meta-micro text-ivory-muted">
+              <span>MONOGRAFIA CURATORIAL / TOMO 12</span>
+              <span class="text-gold-accent">CÁTEDRA DE HISTÓRIA DA ARTE</span>
+            </div>
+            <blockquote class="font-serif text-xl sm:text-2xl text-ivory-light font-light italic leading-snug mb-8">
+              “Uma experiência de silêncio, penumbra e rigor mineral absolutamente ímpar na América Latina. Entrar no arquivo equivale a respirar séculos guardados.”
+            </blockquote>
+          </div>
+          <div class="pt-6 hairline-t meta-micro text-ivory-muted flex justify-between items-end">
+            <div>
+              <span class="text-ivory-base font-bold block text-[10px]">PROF. ARTHUR DE MENEZES</span>
+              <span>PESQUISADOR SÊNIOR EM PATRIMÔNIO MATERIAL</span>
+            </div>
+            <span class="text-gold-accent font-mono text-[9px]">CRÍTICA CULTURAL</span>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+    <!-- FIM: Seção 05 — Autoridade Institucional -->
+
+    <!-- INÍCIO: Interlúdio Arquivístico (Página de Livro Raro) -->
+    <section class="relative py-28 md:py-40 px-4 md:px-12 bg-charcoal-base hairline-b overflow-hidden" data-purpose="archival-interlude" id="archival-interlude">
+      
+      <!-- Marca d'Água Sutil de Glifo ao Fundo -->
+      <div class="absolute inset-0 flex items-center justify-center opacity-[0.03] select-none pointer-events-none font-serif text-[18rem]" aria-hidden="true">
+        ✣
+      </div>
+
+      <div class="max-w-4xl mx-auto text-center relative z-10" id="interlude-content-box">
+        
+        <!-- Categoria Micro -->
+        <div class="meta-micro text-gold-accent mb-6 tracking-[0.35em]">
+          CATÁLOGO MONOGRÁFICO / EXCERTO CURATORIAL
+        </div>
+
+        <!-- Citação Monumental em Português com Animação Robusta -->
+        <div class="interlude-quote relative inline-block pb-6 pt-2 reveal-on-scroll" id="interlude-quote-box">
+          <blockquote class="font-display text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-ivory-light leading-[1.08] tracking-tight font-light uppercase">
+            <span class="quote-line quote-line-1">“TODO OBJETO</span>
+            <span class="quote-line quote-line-2 text-ivory-muted/90">GUARDA</span>
+            <span class="quote-line quote-line-3">UMA MÃO.”</span>
+          </blockquote>
+
+          <!-- Caligrafia Cursiva Sobreposta em Português: "mão" perfeitamente ancorada e centralizada -->
+          <div class="interlude-script-hand select-none" id="interlude-script" aria-hidden="true">
+            mão
+          </div>
+        </div>
+
+        <!-- Divisor Fino com Diamante e Hairline Drawing: ──────────── ◆ ──────────── -->
+        <div class="flex items-center justify-center space-x-4 my-8 text-ivory-border archive-rule" id="interlude-rule" aria-hidden="true">
+          <span class="w-16 h-[1px] bg-ivory-border hairline-draw-left"></span>
+          <span class="text-gold-accent text-xs select-none">◆</span>
+          <span class="w-16 h-[1px] bg-ivory-border hairline-draw-right"></span>
+        </div>
+
+        <!-- Texto Filosófico Complementar -->
+        <p class="font-serif text-base sm:text-lg md:text-xl text-ivory-muted max-w-2xl mx-auto leading-relaxed italic">
+          “No Museu Nocturne, a quebra de um mármore e o desgaste do linho não são desastres: são as inscrições silenciosas da experiência humana gravadas na matéria.”
+        </p>
+
+        <!-- Nota de Rodapé de Catálogo -->
+        <div class="mt-8 meta-micro text-ivory-muted/70">
+          MNT-REF / NOTA 034 — PORTO ALEGRE, MMXXVI
+        </div>
+
+      </div>
+
+    </section>
+    <!-- FIM: Interlúdio Arquivístico -->
+
+    <!-- INÍCIO: Próximas Exposições (Índice / Ledger com Preview ao Passar o Mouse) -->
+    <section class="py-20 md:py-32 px-4 md:px-12 max-w-7xl mx-auto hairline-b" data-purpose="upcoming-exhibitions" id="upcoming">
+      
+      <!-- Cabeçalho da Seção com Revelação no Scroll -->
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 pb-4 hairline-b gap-4 reveal-on-scroll">
+        <div>
+          <span class="meta-micro text-gold-accent tracking-[0.25em] block mb-2">CALENDÁRIO DE EXPOSIÇÕES</span>
+          <h2 class="font-display text-3xl md:text-5xl uppercase tracking-tight text-ivory-light">
+            PRÓXIMAS<br/>EXPOSIÇÕES
+          </h2>
+        </div>
+        <div class="meta-micro text-ivory-muted text-right">
+          <span>PROGRAMAÇÃO BIENAL 2027 — 2028</span><br/>
+          <span>ÍNDICE DE SALAS &amp; DATAS</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- 8 Colunas da Esquerda: Linhas do Ledger Arquivístico com Stagger e Hover Rico -->
+        <div class="lg:col-span-8 divide-y divide-ivory-border/30 hairline-t hairline-b reveal-stagger-group" id="exhibition-ledger">
+          
+          <!-- Linha 035: Memória Botânica -->
+          <div 
+            class="exhibition-row ledger-row-archival stagger-item py-8 group cursor-pointer px-3 flex flex-col md:flex-row md:items-center justify-between gap-4"
+            data-preview-img="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=800&q=80"
+            data-preview-title="035 — MEMÓRIA BOTÂNICA"
+            data-preview-gallery="SALA 02"
+          >
+            <div class="flex items-baseline space-x-6">
+              <span class="font-mono text-base md:text-lg font-bold text-gold-accent ledger-num">035</span>
+              <div>
+                <h3 class="font-display text-xl md:text-2xl text-ivory-light group-hover:text-gold-accent transition-colors uppercase">
+                  Memória Botânica
+                </h3>
+                <span class="meta-micro text-ivory-muted block mt-1">HERBÁRIOS, PIGMENTOS MINERAIS &amp; PAPEL DE ALGODÃO</span>
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-8 text-right meta-mono">
+              <div class="text-ivory-muted text-[10px]">
+                <span>12.03 — 28.06.2027</span><br/>
+                <span class="text-gold-accent text-[8.5px]">SALA 02</span>
+              </div>
+              <span class="text-lg text-ivory-base arrow-move">→</span>
+            </div>
+          </div>
+
+          <!-- Linha 036: O Peso da Luz -->
+          <div 
+            class="exhibition-row ledger-row-archival stagger-item py-8 group cursor-pointer px-3 flex flex-col md:flex-row md:items-center justify-between gap-4"
+            data-preview-img="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=800&q=80"
+            data-preview-title="036 — O PESO DA LUZ"
+            data-preview-gallery="SALA 01"
+          >
+            <div class="flex items-baseline space-x-6">
+              <span class="font-mono text-base md:text-lg font-bold text-gold-accent ledger-num">036</span>
+              <div>
+                <h3 class="font-display text-xl md:text-2xl text-ivory-light group-hover:text-gold-accent transition-colors uppercase">
+                  O Peso da Luz
+                </h3>
+                <span class="meta-micro text-ivory-muted block mt-1">FOTOGRAFIA EM CÂMARA ESCURA &amp; CHIAROSCURO</span>
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-8 text-right meta-mono">
+              <div class="text-ivory-muted text-[10px]">
+                <span>04.07 — 19.10.2027</span><br/>
+                <span class="text-gold-accent text-[8.5px]">SALA 01</span>
+              </div>
+              <span class="text-lg text-ivory-base arrow-move">→</span>
+            </div>
+          </div>
+
+          <!-- Linha 037: Fragmentos do Lar -->
+          <div 
+            class="exhibition-row ledger-row-archival stagger-item py-8 group cursor-pointer px-3 flex flex-col md:flex-row md:items-center justify-between gap-4"
+            data-preview-img="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80"
+            data-preview-title="037 — FRAGMENTOS DO LAR"
+            data-preview-gallery="SALA 05"
+          >
+            <div class="flex items-baseline space-x-6">
+              <span class="font-mono text-base md:text-lg font-bold text-gold-accent ledger-num">037</span>
+              <div>
+                <h3 class="font-display text-xl md:text-2xl text-ivory-light group-hover:text-gold-accent transition-colors uppercase">
+                  Fragmentos do Lar
+                </h3>
+                <span class="meta-micro text-ivory-muted block mt-1">RELICÁRIOS DOMÉSTICOS, CARTAS &amp; LINHO FAMILIAR</span>
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-8 text-right meta-mono">
+              <div class="text-ivory-muted text-[10px]">
+                <span>02.11.2027 — 18.02.2028</span><br/>
+                <span class="text-gold-accent text-[8.5px]">SALA 05</span>
+              </div>
+              <span class="text-lg text-ivory-base arrow-move">→</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 4 Colunas da Direita: Painel Fixo de Visualização Dinâmica com Archival Card -->
+        <div class="lg:col-span-4 hidden lg:block sticky top-28 reveal-on-scroll">
+          <div class="hairline-all bg-charcoal-tint p-4 shadow-xl crosshair-corner archival-card">
+            <div class="flex justify-between items-center pb-2 meta-micro text-ivory-muted">
+              <span>VISUALIZAÇÃO CATALOGADA</span>
+              <span id="preview-gallery-tag" class="text-gold-accent">SALA 02</span>
+            </div>
+            
+            <div class="relative overflow-hidden aspect-[4/3] bg-[#0E0F0C] hairline-all mb-3">
+              <img 
+                id="ledger-preview-img"
+                alt="Prévia da exposição"
+                class="w-full h-full object-cover grayscale-[15%] transition-opacity duration-500 archival-img"
+                src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=800&q=80"
+              />
+            </div>
+
+            <div id="preview-title-tag" class="font-serif text-base text-ivory-light italic">
+              035 — Memória Botânica
+            </div>
+            <div class="meta-micro text-ivory-muted mt-1">
+              PASSE O CURSOR SOBRE AS EXPOSIÇÕES AO LADO
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- FIM: Próximas Exposições -->
+
+    <!-- INÍCIO: Seção 06 — Processo & Método de Catalogação & Conservação (Mastrer3.md Seção 28) -->
+    <section class="py-24 md:py-36 px-4 md:px-12 max-w-7xl mx-auto hairline-b relative" data-purpose="archival-process" id="metodo">
+      
+      <!-- Cabeçalho da Seção com Revelação Editorial -->
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 pb-4 hairline-b gap-4 reveal-on-scroll">
+        <div>
+          <div class="meta-micro text-gold-accent mb-2 tracking-[0.25em]">/ 05 — PROCESSO DE ENTRADA</div>
+          <h2 class="font-display text-3xl md:text-5xl uppercase tracking-tight text-ivory-light">
+            MÉTODO DE CONSERVAÇÃO
+          </h2>
+        </div>
+        <div class="meta-micro text-ivory-muted text-right">
+          <span>PROTOCOLO SEQUENCIAL DE ESTABILIZAÇÃO</span><br/>
+          <span>ARQUIVO FÍSICO-QUÍMICO DOCUMENTADO</span>
+        </div>
+      </div>
+
+      <!-- Sequência Arquivística dos 4 Estágios (Sem Timelines SaaS: Livro de Registro Sequencial) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 hairline-all divide-y md:divide-y-0 md:divide-x divide-ivory-border bg-charcoal-tint/40 reveal-stagger-group">
+        
+        <!-- Estágio 01: Procedência -->
+        <div class="p-8 flex flex-col justify-between space-y-6 step-card stagger-item hover:bg-charcoal-tint/90 transition-colors">
+          <div>
+            <div class="flex justify-between items-baseline mb-4">
+              <span class="editorial-step-num">01</span>
+              <span class="meta-micro text-gold-accent">DIAGNOSE</span>
+            </div>
+            <h3 class="font-display text-lg sm:text-xl text-ivory-light uppercase tracking-tight mb-3">
+              Investigação de Procedência
+            </h3>
+            <p class="font-serif text-sm text-ivory-muted leading-relaxed font-light">
+              Exame paleográfico e físico-químico dos documentos de custódia. Rastreamento da linhagem do artefato e mapeamento de intervenções anteriores.
+            </p>
+          </div>
+          <div class="pt-4 hairline-t meta-micro text-ivory-muted flex justify-between items-center">
+            <span>PERÍCIA DOCUMENTAL</span>
+            <span class="text-gold-accent">ETAPA 01</span>
+          </div>
+        </div>
+
+        <!-- Estágio 02: Quarentena Anóxica -->
+        <div class="p-8 flex flex-col justify-between space-y-6 step-card stagger-item hover:bg-charcoal-tint/90 transition-colors">
+          <div>
+            <div class="flex justify-between items-baseline mb-4">
+              <span class="editorial-step-num">02</span>
+              <span class="meta-micro text-gold-accent">21 DIAS N₂</span>
+            </div>
+            <h3 class="font-display text-lg sm:text-xl text-ivory-light uppercase tracking-tight mb-3">
+              Quarentena Anóxica Selada
+            </h3>
+            <p class="font-serif text-sm text-ivory-muted leading-relaxed font-light">
+              Confinamento estéril em câmara com atmosfera 99,8% de nitrogênio gasoso. Cessação imediata de atividade biológica sem contato com venenos ou solventes.
+            </p>
+          </div>
+          <div class="pt-4 hairline-t meta-micro text-ivory-muted flex justify-between items-center">
+            <span>ISOLAMENTO ATÓXICO</span>
+            <span class="text-gold-accent">ETAPA 02</span>
+          </div>
+        </div>
+
+        <!-- Estágio 03: Diagnóstico Espectrográfico -->
+        <div class="p-8 flex flex-col justify-between space-y-6 step-card stagger-item hover:bg-charcoal-tint/90 transition-colors">
+          <div>
+            <div class="flex justify-between items-baseline mb-4">
+              <span class="editorial-step-num">03</span>
+              <span class="meta-micro text-gold-accent">RAMAN / UV</span>
+            </div>
+            <h3 class="font-display text-lg sm:text-xl text-ivory-light uppercase tracking-tight mb-3">
+              Laudo Mineral &amp; Espectroscopia
+            </h3>
+            <p class="font-serif text-sm text-ivory-muted leading-relaxed font-light">
+              Leitura por luz rasante ultravioleta e espectrometria óptica para identificação de pigmentos, aglutinantes de resina damar e pátinas de calcita.
+            </p>
+          </div>
+          <div class="pt-4 hairline-t meta-micro text-ivory-muted flex justify-between items-center">
+            <span>CARTOGRAFIA QUÍMICA</span>
+            <span class="text-gold-accent">ETAPA 03</span>
+          </div>
+        </div>
+
+        <!-- Estágio 04: Reserva ou Penumbra -->
+        <div class="p-8 flex flex-col justify-between space-y-6 step-card stagger-item hover:bg-charcoal-tint/90 transition-colors">
+          <div>
+            <div class="flex justify-between items-baseline mb-4">
+              <span class="editorial-step-num">04</span>
+              <span class="meta-micro text-gold-accent">19°C / 48% UR</span>
+            </div>
+            <h3 class="font-display text-lg sm:text-xl text-ivory-light uppercase tracking-tight mb-3">
+              Exposição em Penumbra ou Guarda
+            </h3>
+            <p class="font-serif text-sm text-ivory-muted leading-relaxed font-light">
+              Transferência para as galerias subterrâneas climatizadas a 45 lux ou acondicionamento em gavetas de cedro desacidificado na Reserva Técnica.
+            </p>
+          </div>
+          <div class="pt-4 hairline-t meta-micro text-ivory-muted flex justify-between items-center">
+            <span>TOMBO DEFINITIVO</span>
+            <span class="text-gold-accent">ETAPA 04</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Resumo Técnico de Processamento -->
+      <div class="mt-8 flex flex-wrap justify-between items-center meta-micro text-ivory-muted pt-2 reveal-on-scroll">
+        <div class="flex items-center space-x-2">
+          <span class="text-gold-accent">●</span>
+          <span>TEMPO MÉDIO DE PROTOCOLO POR ARTEFATO: 45 DIAS CORRIDOS</span>
+        </div>
+        <div class="font-mono text-gold-accent">
+          CÂMARA DE LAUDOS / PORTO ALEGRE
+        </div>
+      </div>
+
+    </section>
+    <!-- FIM: Seção 06 — Processo & Método -->
+
+    <!-- INÍCIO: Seção Museu & Visitação (Fotografia Noturna e Protocolos) -->
+    <section class="py-20 md:py-32 px-4 md:px-12 max-w-7xl mx-auto hairline-b" data-purpose="museum-visit" id="visit">
+      
+      <!-- Painel Atmosférico: Fotografia Cinematográfica das Galerias com Archival Card e Light Reveal -->
+      <figure class="mb-12 crosshair-corner archival-card reveal-on-scroll" aria-label="Fotografia do interior das galerias subterrâneas do Museu Nocturne">
+        <div class="relative overflow-hidden aspect-[21/9] sm:aspect-[24/9] bg-[#0A0B08] hairline-all">
+          <img 
+            alt="Interior solene das galerias subterrâneas do Museu Nocturne com arcos antigos de pedra e esculturas clássicas sob luz pontual e sombras densas"
+            class="w-full h-full object-cover contrast-[1.12] brightness-[0.88] archival-img gallery-light-reveal"
+            src="./assets/museum_gallery.jpg"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep via-transparent to-transparent opacity-90"></div>
+          
+          <figcaption class="absolute bottom-4 left-4 right-4 flex flex-wrap justify-between items-end meta-micro text-ivory-light">
+            <div class="bg-charcoal-deep/90 px-3 py-1.5 border border-ivory-border/40">
+              SALA DOS ARCOS / ARQUIVO SUBTERRÂNEO — ILUMINAÇÃO RESTRITA A 45 LUX
+            </div>
+            <div class="hidden sm:block text-gold-accent font-mono">
+              PRAÇA DAS ARTES, 34 / PORTO ALEGRE / BR
+            </div>
+          </figcaption>
+        </div>
+      </figure>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+        
+        <!-- 6 Colunas da Esquerda: Localização & Horários de Funcionamento com Archival Card -->
+        <div class="lg:col-span-6 relative flex flex-col justify-between hairline-all bg-charcoal-tint p-6 md:p-8 crosshair-corner archival-card reveal-on-scroll">
+          <div>
+            <div class="meta-micro text-gold-accent mb-2 tracking-widest">LOCALIZAÇÃO &amp; HORÁRIOS</div>
+            <h2 class="font-display text-3xl md:text-4xl text-ivory-light uppercase tracking-tight mb-4">
+              VISITE O<br/>MUSEU NOCTURNE
+            </h2>
+
+            <div class="meta-mono text-ivory-base mb-6 leading-relaxed">
+              PRAÇA DAS ARTES, 34<br/>
+              PORTO ALEGRE / BR — CEP 90010-000
+            </div>
+
+            <!-- Tabela de Horários -->
+            <div class="space-y-3 font-mono text-[9.5px] text-ivory-muted border-t border-ivory-border/30 pt-4 mb-6">
+              <div class="flex justify-between">
+                <span class="text-ivory-base font-bold">TERÇA A DOMINGO:</span>
+                <span>10:00 — 18:00</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-ivory-base font-bold">QUINTA-FEIRA (NOTURNO):</span>
+                <span class="text-gold-accent font-bold">10:00 — 21:00</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-ivory-base font-bold">SEGUNDAS-FEIRAS:</span>
+                <span class="text-ivory-muted/70">FECHADO (CONSERVAÇÃO PREVENTIVA)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chamada Editorial e Links de Apoio -->
+          <div class="pt-4 border-t border-ivory-border/30 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+            <a class="action-btn-editorial inline-flex items-center space-x-2 text-[9.5px] font-mono tracking-[0.2em] uppercase text-ivory-base border border-ivory-base px-5 py-2.5 hover:bg-ivory-base hover:text-charcoal-deep transition-all" href="#hero">
+              <span>PLANEJE SUA VISITA</span>
+              <span class="text-gold-accent arrow-move">→</span>
+            </a>
+
+            <!-- Micro Links -->
+            <div class="flex items-center space-x-4 meta-micro text-ivory-muted">
+              <a class="hover:text-gold-accent transition-colors underline underline-offset-4" href="#visit">INGRESSOS</a>
+              <span class="text-gold-accent">/</span>
+              <a class="hover:text-gold-accent transition-colors underline underline-offset-4" href="#visit">ACESSIBILIDADE</a>
+              <span class="text-gold-accent">/</span>
+              <a class="hover:text-gold-accent transition-colors underline underline-offset-4" href="#visit">COMO CHEGAR</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 Colunas da Direita: Padrões de Conservação & Laudo Ambiental com Archival Card -->
+        <div class="lg:col-span-6 hairline-all p-6 md:p-8 bg-charcoal-deep flex flex-col justify-between crosshair-corner archival-card reveal-on-scroll">
+          <div>
+            <div class="meta-micro text-gold-accent mb-2 tracking-widest">PROTOCOLO DE SALA &amp; LAUDO</div>
+            <h3 class="font-serif text-2xl md:text-3xl text-ivory-light mb-4">
+              Condições de Iluminação &amp; Conservação
+            </h3>
+
+            <!-- Grade de Dados Técnicos -->
+            <div class="grid grid-cols-2 gap-4 meta-mono mb-6">
+              <div class="hairline-all p-4 bg-charcoal-tint transition-colors hover:border-gold-accent/50">
+                <span class="meta-micro text-ivory-muted block text-[8px]">LUZ MÁXIMA PERMITIDA</span>
+                <span class="font-serif text-2xl text-ivory-light font-bold">≤ 50 LUX</span>
+                <span class="meta-micro text-gold-accent block mt-1">FILTROS ULTRAVIOLETA 100%</span>
+              </div>
+              <div class="hairline-all p-4 bg-charcoal-tint transition-colors hover:border-gold-accent/50">
+                <span class="meta-micro text-ivory-muted block text-[8px]">UMIDADE RELATIVA</span>
+                <span class="font-serif text-2xl text-ivory-light font-bold">48% ± 3%</span>
+                <span class="meta-micro text-gold-accent block mt-1">SISTEMA HIDROSTÁTICO</span>
+              </div>
+            </div>
+
+            <p class="font-serif italic text-sm text-ivory-muted leading-relaxed mb-4">
+              “A visitação às galerias subterrâneas e salas de reserva exige preservação do silêncio e proibição absoluta de flash ou emissões luminosas. Os objetos respiram sob a mesma quietude há séculos.”
+            </p>
+          </div>
+
+          <!-- Assinatura Gráfica -->
+          <div class="pt-6 border-t border-ivory-border/30 flex justify-between items-center meta-micro text-ivory-muted">
+            <span>PORTO ALEGRE / BR — FUND. 1987</span>
+            <div class="text-xs text-gold-accent space-x-1 select-none" aria-hidden="true">
+              <span>✣</span><span>✣</span><span>✣</span><span>✣</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- FIM: Seção Museu & Visitação -->
+
+    <!-- INÍCIO: Registro Arquivístico & Tabela de Catalogação em Tempo Real -->
+    <section class="py-20 md:py-28 px-4 md:px-12 max-w-7xl mx-auto hairline-b" data-purpose="archival-registry" id="archive">
+      
+      <!-- Barra de Filtro Interativo com Revelação no Scroll -->
+      <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-10 pb-6 hairline-b gap-6 reveal-on-scroll">
+        <div>
+          <span class="meta-micro text-gold-accent tracking-[0.25em] block mb-2">TABELA DE CATALOGAÇÃO GERAL</span>
+          <h2 class="font-display text-3xl md:text-4xl uppercase tracking-tight text-ivory-light">
+            REGISTRO TÉCNICO DAS OBRAS
+          </h2>
+        </div>
+
+        <!-- Campo de Busca Estilizado -->
+        <div class="w-full lg:w-96">
+          <label class="meta-micro text-ivory-muted block mb-1" for="archive-search">
+            LOCALIZAR REGISTRO POR TERMO / CÓDICE:
+          </label>
+          <div class="relative">
+            <input 
+              class="w-full bg-charcoal-deep/90 border-0 border-b border-ivory-border text-xs font-mono text-ivory-light placeholder-ivory-muted/40 focus:ring-0 focus:border-gold-accent px-0 py-2 transition-all tracking-wider uppercase" 
+              id="archive-search" 
+              placeholder="Ex: LINHO, MNT-034, MÁRMORE, SEDA..." 
+              type="text"
+            />
+            <span class="absolute right-0 top-2 text-[9px] font-mono text-gold-accent">✣ FILTRO ATIVO</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabela Principal de Registro -->
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse font-mono text-xs">
+          <thead>
+            <tr class="hairline-b text-ivory-muted meta-micro bg-charcoal-tint/70">
+              <th class="py-4 px-4 font-normal">REGISTRO</th>
+              <th class="py-4 px-4 font-normal">DATAÇÃO</th>
+              <th class="py-4 px-4 font-normal">TÍTULO &amp; MATÉRIA</th>
+              <th class="py-4 px-4 font-normal hidden md:table-cell">CURADORIA</th>
+              <th class="py-4 px-4 font-normal">ESTADO</th>
+              <th class="py-4 px-4 font-normal text-right">CONSULTA</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-ivory-border/40 text-[11px] text-ivory-base reveal-stagger-group">
+            
+            <!-- Objeto 017 -->
+            <tr class="table-row-archival stagger-item hover:bg-charcoal-tint transition-colors">
+              <td class="py-4 px-4 font-bold text-gold-accent">MNT-017</td>
+              <td class="py-4 px-4 text-ivory-muted">c. 1894</td>
+              <td class="py-4 px-4">
+                <span class="font-serif text-sm text-ivory-light block font-semibold">Estudo Sem Título (Mãos em Prece)</span>
+                <span class="text-[9px] text-ivory-muted">Óleo sobre linho cru escurecido</span>
+              </td>
+              <td class="py-4 px-4 text-ivory-muted hidden md:table-cell">Helena Moreira</td>
+              <td class="py-4 px-4">
+                <span class="inline-flex items-center text-[9px] text-ivory-light border border-ivory-border px-2 py-0.5">
+                  ESTÁVEL (MICROCLIMA)
+                </span>
+              </td>
+              <td class="py-4 px-4 text-right">
+                <button class="action-btn-editorial text-gold-accent tracking-widest text-[9px] cursor-pointer" onclick="openArchivalModal('MNT-017')"><span>[LAUDO]</span></button>
+              </td>
+            </tr>
+
+            <!-- Objeto 028 -->
+            <tr class="table-row-archival stagger-item hover:bg-charcoal-tint transition-colors">
+              <td class="py-4 px-4 font-bold text-gold-accent">MNT-028</td>
+              <td class="py-4 px-4 text-ivory-muted">c. 1770</td>
+              <td class="py-4 px-4">
+                <span class="font-serif text-sm text-ivory-light block font-semibold">Relicário em Seda &amp; Fios de Ouro</span>
+                <span class="text-[9px] text-ivory-muted">Madeira de nogueira, veludo puído e fios de ouro 22k</span>
+              </td>
+              <td class="py-4 px-4 text-ivory-muted hidden md:table-cell">Gabinete Ibérico MNT</td>
+              <td class="py-4 px-4">
+                <span class="inline-flex items-center text-[9px] text-gold-accent border border-gold-accent/50 px-2 py-0.5">
+                  FRÁGIL EXTREMO
+                </span>
+              </td>
+              <td class="py-4 px-4 text-right">
+                <button class="action-btn-editorial text-gold-accent tracking-widest text-[9px] cursor-pointer" onclick="openArchivalModal('MNT-028')"><span>[LAUDO]</span></button>
+              </td>
+            </tr>
+
+            <!-- Objeto 041 -->
+            <tr class="table-row-archival stagger-item hover:bg-charcoal-tint transition-colors">
+              <td class="py-4 px-4 font-bold text-gold-accent">MNT-041</td>
+              <td class="py-4 px-4 text-ivory-muted">c. 1820</td>
+              <td class="py-4 px-4">
+                <span class="font-serif text-sm text-ivory-light block font-semibold">Torso &amp; Fragmento de Mármore</span>
+                <span class="text-[9px] text-ivory-muted">Mármore carrarense com fissuras e pátina mineral</span>
+              </td>
+              <td class="py-4 px-4 text-ivory-muted hidden md:table-cell">Helena Moreira</td>
+              <td class="py-4 px-4">
+                <span class="inline-flex items-center text-[9px] text-ivory-light border border-ivory-border px-2 py-0.5">
+                  FISSURA ESTABILIZADA
+                </span>
+              </td>
+              <td class="py-4 px-4 text-right">
+                <button class="action-btn-editorial text-gold-accent tracking-widest text-[9px] cursor-pointer" onclick="openArchivalModal('MNT-041')"><span>[LAUDO]</span></button>
+              </td>
+            </tr>
+
+            <!-- Objeto 052 -->
+            <tr class="table-row-archival stagger-item hover:bg-charcoal-tint transition-colors">
+              <td class="py-4 px-4 font-bold text-gold-accent">MNT-052</td>
+              <td class="py-4 px-4 text-ivory-muted">c. 1540</td>
+              <td class="py-4 px-4">
+                <span class="font-serif text-sm text-ivory-light block font-semibold">Cofre Relicário &amp; Herbário Seco</span>
+                <span class="text-[9px] text-ivory-muted">Carvalho, ferro forjado, pergaminho e sementes secas</span>
+              </td>
+              <td class="py-4 px-4 text-ivory-muted hidden md:table-cell">Gabinete Flandres MNT</td>
+              <td class="py-4 px-4">
+                <span class="inline-flex items-center text-[9px] text-ivory-light border border-ivory-border px-2 py-0.5">
+                  ANÓXIA COMPLETA
+                </span>
+              </td>
+              <td class="py-4 px-4 text-right">
+                <button class="action-btn-editorial text-gold-accent tracking-widest text-[9px] cursor-pointer" onclick="openArchivalModal('MNT-052')"><span>[LAUDO]</span></button>
+              </td>
+            </tr>
+
+            <!-- Obra Matriz 034 -->
+            <tr class="table-row-archival stagger-item hover:bg-charcoal-tint transition-colors bg-charcoal-tint/30">
+              <td class="py-4 px-4 font-bold text-gold-accent">MNT-034</td>
+              <td class="py-4 px-4 text-ivory-muted">2026</td>
+              <td class="py-4 px-4">
+                <span class="font-serif text-sm text-ivory-light block font-semibold">A Memória das Coisas (Matriz Iconográfica)</span>
+                <span class="text-[9px] text-ivory-muted">Fotografia analógica 35mm, joalheria, renda e cera</span>
+              </td>
+              <td class="py-4 px-4 text-ivory-muted hidden md:table-cell">MUSEU NOCTURNE</td>
+              <td class="py-4 px-4">
+                <span class="inline-flex items-center text-[9px] text-ivory-light bg-gold-accent/20 border border-gold-accent px-2 py-0.5 text-gold-accent">
+                  EXPOSIÇÃO ATUAL
+                </span>
+              </td>
+              <td class="py-4 px-4 text-right">
+                <button class="action-btn-editorial text-gold-accent tracking-widest text-[9px] cursor-pointer" onclick="openArchivalModal('MNT-034')"><span>[LAUDO]</span></button>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Rodapé do Registro -->
+      <div class="mt-4 flex flex-wrap justify-between items-center meta-micro text-ivory-muted pt-2 reveal-on-scroll">
+        <span>MOSTRANDO 05 DE 034 REGISTROS HOMOLOGADOS</span>
+        <span>ATUALIZAÇÃO DE INVENTÁRIO: 2026 / PORTO ALEGRE</span>
+      </div>
+
+    </section>
+    <!-- FIM: Registro Arquivístico -->
+
+    <!-- INÍCIO: Seção 07 — Oferta Clara & Admissão (Mastrer3.md Seções 29 e 30) -->
+    <section class="py-24 md:py-36 px-4 md:px-12 max-w-7xl mx-auto hairline-b relative" data-purpose="archival-admission" id="ingressos">
+      
+      <!-- Cabeçalho da Seção com Revelação Editorial -->
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 pb-4 hairline-b gap-4 reveal-on-scroll">
+        <div>
+          <div class="meta-micro text-gold-accent mb-2 tracking-[0.25em]">/ 06 — OFERTA &amp; CONVERSÃO</div>
+          <h2 class="font-display text-3xl md:text-5xl uppercase tracking-tight text-ivory-light">
+            ADMISSÃO AO ARQUIVO
+          </h2>
+        </div>
+        <div class="meta-micro text-ivory-muted text-right">
+          <span>SESSÕES COM NÚMERO ESTRITO DE VISITANTES (MÁX. 25/TURNO)</span><br/>
+          <span>INGRESSOS VÁLIDOS PARA HORÁRIO MARCADO</span>
+        </div>
+      </div>
+
+      <!-- Grade Editorial das Três Modalidades de Acesso (Mastrer3.md Seção 29: Clareza Total de Oferta) -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-0 hairline-all divide-y lg:divide-y-0 lg:divide-x divide-ivory-border bg-charcoal-tint/40 mb-16 reveal-stagger-group">
+        
+        <!-- Modalidade 01: Ingresso Geral Exposição 034 -->
+        <div class="p-8 sm:p-10 flex flex-col justify-between space-y-8 step-card stagger-item hover:bg-charcoal-tint/90 transition-colors">
+          <div>
+            <div class="flex justify-between items-baseline mb-4">
+              <span class="meta-micro text-gold-accent font-mono">MODALIDADE 01</span>
+              <span class="text-[9px] font-mono text-ivory-muted">TERÇA A DOMINGO</span>
+            </div>
+            
+            <h3 class="font-display text-2xl text-ivory-light uppercase tracking-tight mb-2">
+              Acesso Geral à Exposição 034
+            </h3>
+            
+            <div class="font-display text-3xl sm:text-4xl text-ivory-light font-light my-4">
+              R$ 40 <span class="text-xs font-mono text-ivory-muted font-normal">/ R$ 20 (MEIA)</span>
+            </div>
+
+            <p class="font-serif text-sm text-ivory-muted leading-relaxed mb-6 font-light">
+              Entrada individual para as Galerias 04 e 05 sob iluminação penumbral. Inclui ensaio sonoro curatorial e livreto de catalogação impresso em papel de algodão.
+            </p>
+
+            <ul class="space-y-2.5 font-mono text-[9px] text-ivory-base pt-4 hairline-t">
+              <li class="flex items-center space-x-2">
+                <span class="text-gold-accent">◆</span>
+                <span>Permanência estimada: 90 minutos</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <span class="text-gold-accent">◆</span>
+                <span>Livreto monográfico incluso</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <span class="text-gold-accent">◆</span>
+                <span>Acesso a todas as 34 obras do núcleo</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6 hairline-t">
+            <a class="action-btn-editorial w-full justify-between meta-mono text-xs text-ivory-base border border-ivory-border px-5 py-3 hover:bg-ivory-base hover:text-charcoal-deep transition-all" href="#final-cta">
+              <span>RESERVAR INGRESSO GERAL</span>
+              <span class="arrow-move text-gold-accent">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Modalidade 02: Visita Curatorial Noturna (Destaque Principal) -->
+        <div class="p-8 sm:p-10 flex flex-col justify-between space-y-8 step-card stagger-item bg-charcoal-tint/80 relative border-t-2 border-t-gold-accent lg:border-t-0 hover:bg-charcoal-tint transition-colors">
+          <div>
+            <div class="flex justify-between items-baseline mb-4">
+              <span class="meta-micro text-gold-accent font-bold font-mono">MODALIDADE 02 / SESSÃO ESPECIAL</span>
+              <span class="text-[9px] font-mono text-gold-accent font-bold">QUINTA-FEIRA 19:00</span>
+            </div>
+            
+            <h3 class="font-display text-2xl text-ivory-light uppercase tracking-tight mb-2">
+              Visita Noturna Curatorial
+            </h3>
+            
+            <div class="font-display text-3xl sm:text-4xl text-gold-accent font-light my-4">
+              R$ 65 <span class="text-xs font-mono text-ivory-muted font-normal">/ VAGAS LIMITADAS</span>
+            </div>
+
+            <p class="font-serif text-sm text-ivory-muted leading-relaxed mb-6 font-light">
+              Percurso guiado pessoalmente pela curadora Helena Moreira. Acesso pontual à antecâmara da Reserva Técnica e audição de leituras de códices sob luz de velas de cera mineral.
+            </p>
+
+            <ul class="space-y-2.5 font-mono text-[9px] text-ivory-base pt-4 hairline-t">
+              <li class="flex items-center space-x-2">
+                <span class="text-gold-accent">◆</span>
+                <span>Lotação máxima estrita: 25 visitantes</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <span class="text-gold-accent">◆</span>
+                <span>Diálogo técnico com a equipe de conservação</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <span class="text-gold-accent">◆</span>
+                <span>Exemplar assinado do catálogo 034</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6 hairline-t">
+            <a class="action-btn-editorial w-full justify-between meta-mono text-xs text-charcoal-deep bg-ivory-base border border-ivory-base px-5 py-3 hover:bg-gold-accent hover:border-gold-accent hover:text-charcoal-deep font-bold transition-all" href="#final-cta">
+              <span>AGENDAR VISITA NOTURNA</span>
+              <span class="arrow-move text-charcoal-deep">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Modalidade 03: Credencial de Pesquisa & Reserva -->
+        <div class="p-8 sm:p-10 flex flex-col justify-between space-y-8 step-card stagger-item hover:bg-charcoal-tint/90 transition-colors">
+          <div>
+            <div class="flex justify-between items-baseline mb-4">
+              <span class="meta-micro text-ivory-muted font-mono">MODALIDADE 03</span>
+              <span class="text-[9px] font-mono text-ivory-muted">SEGUNDAS-FEIRAS</span>
+            </div>
+            
+            <h3 class="font-display text-2xl text-ivory-light uppercase tracking-tight mb-2">
+              Credencial de Pesquisador
+            </h3>
+            
+            <div class="font-display text-3xl sm:text-4xl text-ivory-light font-light my-4">
+              GRATUITO <span class="text-xs font-mono text-ivory-muted font-normal">/ SOB HOMOLOGAÇÃO</span>
+            </div>
+
+            <p class="font-serif text-sm text-ivory-muted leading-relaxed mb-6 font-light">
+              Destinado a historiadores, restauradores e acadêmicos. Consulta física a laudos de espectrografia, gavetas de pergaminhos e registros de tombo desde 1987.
+            </p>
+
+            <ul class="space-y-2.5 font-mono text-[9px] text-ivory-base pt-4 hairline-t">
+              <li class="flex items-center space-x-2">
+                <span class="text-gold-accent">◆</span>
+                <span>Exame em mesa limpa com luvas de algodão</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <span class="text-gold-accent">◆</span>
+                <span>Acesso a códices fora de exposição</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <span class="text-gold-accent">◆</span>
+                <span>Requer submissão de projeto prévio</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6 hairline-t">
+            <button class="action-btn-editorial w-full justify-between meta-mono text-xs text-ivory-base border border-ivory-border px-5 py-3 hover:bg-ivory-base hover:text-charcoal-deep transition-all cursor-pointer" onclick="openArchivalModal('MNT-034')">
+              <span>SOLICITAR CREDENCIAL</span>
+              <span class="arrow-move text-gold-accent">→</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Selo de Acolhimento e Garantia Curatorial -->
+      <div class="flex flex-wrap justify-between items-center meta-micro text-ivory-muted pt-2 reveal-on-scroll">
+        <div>CANCELAMENTO E REAGENDAMENTO GRATUITOS ATÉ 24H ANTES DA SESSÃO</div>
+        <div class="flex items-center space-x-3 text-gold-accent">
+          <span>✣</span>
+          <span class="text-ivory-base font-bold">PROTOCOLO DE SILÊNCIO INTEGRAL</span>
+          <span>✣</span>
+        </div>
+      </div>
+
+    </section>
+    <!-- FIM: Seção 07 — Oferta & Admissão -->
+
+    <!-- INÍCIO: Seção FAQ / Objeções em Acordeão Hairline (Mastrer3.md Seção 31) -->
+    <section class="py-24 md:py-36 px-4 md:px-12 max-w-4xl mx-auto hairline-b relative" data-purpose="archival-faq" id="faq">
+      
+      <!-- Cabeçalho da Seção com Revelação Editorial -->
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-14 pb-4 hairline-b gap-4 reveal-on-scroll">
+        <div>
+          <div class="meta-micro text-gold-accent mb-2 tracking-[0.25em]">/ 07 — ESCLARECIMENTOS &amp; PROTOCOLOS</div>
+          <h2 class="font-display text-3xl md:text-5xl uppercase tracking-tight text-ivory-light">
+            PERGUNTAS FREQUENTES
+          </h2>
+        </div>
+        <div class="meta-micro text-ivory-muted text-right">
+          <span>NORMAS DE VISITAÇÃO &amp; CONSERVAÇÃO</span><br/>
+          <span>ACORDEÃO HAIRLINE ACESSÍVEL</span>
+        </div>
+      </div>
+
+      <!-- Lista do Acordeão Hairline com Botão Semântico, + Rotacionando e aria-expanded -->
+      <div class="divide-y divide-ivory-border hairline-t hairline-b reveal-on-scroll" id="archival-accordion">
+        
+        <!-- Pergunta 1: Iluminação Baixa -->
+        <div class="faq-item">
+          <button 
+            aria-controls="faq-ans-1" 
+            aria-expanded="false" 
+            class="faq-trigger" 
+            id="faq-btn-1"
+          >
+            <span class="font-serif text-lg sm:text-xl text-ivory-light font-light text-left pr-4">
+              1. Por que a iluminação das galerias é mantida em níveis tão baixos?
+            </span>
+            <span class="faq-plus" aria-hidden="true">+</span>
+          </button>
+          <div 
+            aria-labelledby="faq-btn-1" 
+            class="faq-panel" 
+            id="faq-ans-1" 
+            role="region"
+          >
+            <p class="font-serif text-sm sm:text-base text-ivory-muted leading-relaxed font-light italic">
+              A luz é o principal agente acelerador de degradação fotoquímica em fibras de linho, seda e pigmentos minerais de séculos passados. Mantemos todas as salas com iluminação restrita a $\le$ 50 Lux e filtros ultravioleta 100% para que as peças possam ser apreciadas sem desbotamento estrutural. Os olhos dos visitantes levam cerca de 3 a 5 minutos para se habituar à penumbra, revelando detalhes que a luz excessiva oculta.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pergunta 2: Fotografia -->
+        <div class="faq-item">
+          <button 
+            aria-controls="faq-ans-2" 
+            aria-expanded="false" 
+            class="faq-trigger" 
+            id="faq-btn-2"
+          >
+            <span class="font-serif text-lg sm:text-xl text-ivory-light font-light text-left pr-4">
+              2. É permitido fotografar os objetos no interior do museu?
+            </span>
+            <span class="faq-plus" aria-hidden="true">+</span>
+          </button>
+          <div 
+            aria-labelledby="faq-btn-2" 
+            class="faq-panel" 
+            id="faq-ans-2" 
+            role="region"
+          >
+            <p class="font-serif text-sm sm:text-base text-ivory-muted leading-relaxed font-light italic">
+              Fotografias sem flash e sem luz auxiliar são autorizadas exclusivamente com aparelhos manuais em modo silencioso. O uso de flash, tripés, bastões de selfie ou iluminação de suporte é estritamente proibido por motivos de conservação e respeito à experiência imersiva dos demais visitantes. Para ensaios documentais ou de imprensa, o agendamento prévio com a assessoria é obrigatório.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pergunta 3: Limite de 25 Visitantes -->
+        <div class="faq-item">
+          <button 
+            aria-controls="faq-ans-3" 
+            aria-expanded="false" 
+            class="faq-trigger" 
+            id="faq-btn-3"
+          >
+            <span class="font-serif text-lg sm:text-xl text-ivory-light font-light text-left pr-4">
+              3. Por que as sessões de visitação comportam apenas 25 pessoas por horário?
+            </span>
+            <span class="faq-plus" aria-hidden="true">+</span>
+          </button>
+          <div 
+            aria-labelledby="faq-btn-3" 
+            class="faq-panel" 
+            id="faq-ans-3" 
+            role="region"
+          >
+            <p class="font-serif text-sm sm:text-base text-ivory-muted leading-relaxed font-light italic">
+              A respiração e o calor metabólico de grupos numerosos provocam oscilações drásticas nos índices de umidade relativa (estabilizada rigorosamente em 48%) e na temperatura (19°C) das salas subterrâneas. O teto de 25 pessoas por sessão resguarda a estabilidade física do microclima e garante o silêncio necessário para uma relação íntima com cada artefato.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pergunta 4: Acesso à Reserva Técnica -->
+        <div class="faq-item">
+          <button 
+            aria-controls="faq-ans-4" 
+            aria-expanded="false" 
+            class="faq-trigger" 
+            id="faq-btn-4"
+          >
+            <span class="font-serif text-lg sm:text-xl text-ivory-light font-light text-left pr-4">
+              4. Como pesquisadores podem solicitar acesso aos laudos e à Reserva Técnica?
+            </span>
+            <span class="faq-plus" aria-hidden="true">+</span>
+          </button>
+          <div 
+            aria-labelledby="faq-btn-4" 
+            class="faq-panel" 
+            id="faq-ans-4" 
+            role="region"
+          >
+            <p class="font-serif text-sm sm:text-base text-ivory-muted leading-relaxed font-light italic">
+              Pesquisadores vinculados a instituições acadêmicas, museus ou ateliês de restauro podem solicitar a Credencial de Pesquisa enviando síntese do projeto acadêmico e justificativa de consulta. As visitas à Reserva Técnica ocorrem exclusivamente às segundas-feiras (com o museu fechado ao público geral) sob supervisão direta do laboratório de conservação.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Nota de Suporte Curatorial -->
+      <div class="mt-8 flex flex-wrap justify-between items-center meta-micro text-ivory-muted pt-2 reveal-on-scroll">
+        <span>OUTRAS DÚVIDAS ESPECÍFICAS? CONSULTE A CURADORIA: ARQUIVO@MUSEUNOATURNE.ORG</span>
+        <span class="text-gold-accent font-mono">RESPOSTA EM ATÉ 24H</span>
+      </div>
+
+    </section>
+    <!-- FIM: Seção FAQ -->
+
+    <!-- INÍCIO: Seção Final CTA Monumental (Mastrer3.md Seção 32 / animacoes2.md WOW Moment 4) -->
+    <section class="py-28 md:py-44 px-4 md:px-12 max-w-6xl mx-auto hairline-b relative overflow-hidden" data-purpose="final-cta" id="final-cta">
+      
+      <!-- Feixe de Luz de Museu Atmosférico reconectando à Hero -->
+      <div class="absolute inset-0 museum-beam opacity-45 pointer-events-none" aria-hidden="true"></div>
+
+      <!-- Marca d'Água Monumental de Glifo ao Fundo -->
+      <div class="absolute inset-0 flex items-center justify-center opacity-[0.035] select-none pointer-events-none font-serif text-[22rem]" aria-hidden="true">
+        ✣
+      </div>
+
+      <div class="relative z-10 max-w-4xl mx-auto text-center reveal-on-scroll">
+        
+        <!-- Indicador de Tombo Superior -->
+        <div class="meta-micro text-gold-accent mb-6 tracking-[0.3em]">
+          <span class="decrypted-text" data-value="EXPOSIÇÃO 034 / ADMISSÃO AO ARQUIVO">EXPOSIÇÃO 034 / ADMISSÃO AO ARQUIVO</span>
+        </div>
+
+        <!-- Título Monumental com Intervenção Caligráfica Sobreposta -->
+        <div class="relative pb-6 select-none">
+          <h2 class="font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-ivory-light uppercase tracking-tight leading-[0.92] font-bold">
+            PRONTO PARA ENTRAR NO ARQUIVO?
+          </h2>
+
+          <div class="calligraphic-overlap absolute -top-5 right-2 sm:right-16 text-5xl sm:text-7xl select-none" aria-hidden="true">
+            presença
+          </div>
+        </div>
+
+        <!-- Divisor Ornamental com Diamante: ──────────── ◆ ──────────── -->
+        <div class="flex items-center justify-center space-x-4 my-8 text-ivory-border archive-rule" aria-hidden="true">
+          <span class="w-16 sm:w-28 h-[1px] bg-ivory-border hairline-draw-left"></span>
+          <span class="text-gold-accent text-xs select-none">◆</span>
+          <span class="w-16 sm:w-28 h-[1px] bg-ivory-border hairline-draw-right"></span>
+        </div>
+
+        <!-- Cópia de Conversão Curatorial -->
+        <p class="font-serif text-lg sm:text-xl md:text-2xl text-ivory-muted max-w-2xl mx-auto leading-relaxed mb-10 font-light italic blur-focus-reveal">
+          “O silêncio do arquivo espera por você. Reserve sua sessão e experimente o peso tangível de objetos que guardam a temperatura de mãos humanas há séculos.”
+        </p>
+
+        <!-- Ações Editoriais Principais com Microatração Magnética -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
+          <a class="action-btn-editorial magnetic-btn inline-flex items-center space-x-3 text-xs sm:text-sm font-mono tracking-[0.2em] uppercase text-charcoal-deep bg-ivory-base border border-ivory-base px-8 py-4 hover:bg-gold-accent hover:border-gold-accent hover:text-charcoal-deep font-bold transition-all" href="#visit">
+            <span>RESERVAR INGRESSO COM HORA MARCADA</span>
+            <span class="arrow-move text-charcoal-deep text-base">→</span>
+          </a>
+
+          <a class="action-btn-editorial magnetic-btn inline-flex items-center space-x-2 text-xs font-mono tracking-[0.18em] uppercase text-ivory-base border border-ivory-border px-6 py-4 hover:border-gold-accent hover:text-gold-accent transition-all" href="#upcoming">
+            <span>VER PRÓXIMAS EXPOSIÇÕES</span>
+            <span class="arrow-move text-gold-accent">→</span>
+          </a>
+        </div>
+
+        <!-- Metadados Inferiores -->
+        <div class="mt-12 flex flex-wrap justify-center items-center gap-6 meta-micro text-ivory-muted/70">
+          <span>CAPACIDADE MÁXIMA: 25 VISITANTES / SESSÃO</span>
+          <span>●</span>
+          <span>ACESSIBILIDADE UNIVERSAL</span>
+          <span>●</span>
+          <span>PORTO ALEGRE / BRASIL</span>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- FIM: Final CTA -->
+
+    <!-- Retículo Técnico Contextual (ativado no hover sobre obras e fotografias) -->
+    <div id="archival-reticle" aria-hidden="true"></div>
+
+  </main>
+
+  <!-- INÍCIO: Rodapé Editorial Institucional -->
+  <footer class="hairline-t bg-charcoal-deep pt-16 pb-8 px-4 md:px-12 relative overflow-hidden" data-purpose="editorial-footer">
+    <div class="max-w-7xl mx-auto flex flex-col gap-12 relative z-10">
+      
+      <!-- Linha Superior: Marca e Identificador de Exposição com Revelação no Scroll -->
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-10 border-b border-ivory-border/30 reveal-on-scroll">
+        <div>
+          <span class="font-monumental text-2xl tracking-[0.24em] text-ivory-base block font-bold">
+            MUSEU NOCTURNE
+          </span>
+          <span class="meta-micro text-ivory-muted mt-1 block">
+            PORTO ALEGRE / BRASIL — INSTITUTO DE MEMÓRIA &amp; ARQUIVO EDITORIAL
+          </span>
+        </div>
+
+        <div class="flex items-center space-x-4 text-gold-accent text-sm select-none" aria-hidden="true">
+          <span>✣</span>
+          <span class="meta-mono text-ivory-muted">MNT 034 / 2026</span>
+          <span>✣</span>
+        </div>
+      </div>
+
+      <!-- Grade de Navegação Editorial com Revelação em Cascata (Stagger) -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 meta-micro text-ivory-muted leading-relaxed reveal-stagger-group">
+        
+        <!-- Coluna 1: Links -->
+        <div class="stagger-item">
+          <span class="text-ivory-base block mb-3 font-bold">NAVEGAÇÃO EDITORIAL:</span>
+          <ul class="space-y-2">
+            <li><a class="hover:text-gold-accent transition-colors" href="#manifesto">01. MANIFESTO</a></li>
+            <li><a class="hover:text-gold-accent transition-colors" href="#exhibition">02. EXPOSIÇÃO 034</a></li>
+            <li><a class="hover:text-gold-accent transition-colors" href="#collection">03. ACERVO SELECIONADO</a></li>
+            <li><a class="hover:text-gold-accent transition-colors" href="#autoridade">04. AUTORIDADE &amp; LAUDOS</a></li>
+            <li><a class="hover:text-gold-accent transition-colors" href="#metodo">05. MÉTODO DE CONSERVAÇÃO</a></li>
+            <li><a class="hover:text-gold-accent transition-colors" href="#ingressos">06. INGRESSOS &amp; ADMISSÃO</a></li>
+            <li><a class="hover:text-gold-accent transition-colors" href="#faq">07. PERGUNTAS FREQUENTES</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 2: Horários -->
+        <div class="stagger-item">
+          <span class="text-ivory-base block mb-3 font-bold">HORÁRIO DE VISITAÇÃO:</span>
+          TER—DOM: 10:00—18:00<br/>
+          QUINTA: 10:00—21:00 (NOTURNO)<br/>
+          SEGUNDA: FECHADO (RESTAURO)<br/>
+          <span class="text-gold-accent mt-2 block">RESERVA TÉCNICA: SOB AGENDAMENTO</span>
+        </div>
+
+        <!-- Coluna 3: Endereço & Redes -->
+        <div class="stagger-item">
+          <span class="text-ivory-base block mb-3 font-bold">SEDE &amp; ARQUIVO:</span>
+          Praça das Artes, 34<br/>
+          Porto Alegre — RS / Brasil<br/>
+          CEP 90010-000<br/>
+          <span class="text-ivory-base mt-2 block font-bold">COMUNICAÇÃO:</span>
+          <div class="flex space-x-3 mt-1">
+            <a class="hover:text-gold-accent transition-colors underline underline-offset-4" href="#">INSTAGRAM</a>
+            <span>/</span>
+            <a class="hover:text-gold-accent transition-colors underline underline-offset-4" href="#">VIMEO</a>
+          </div>
+        </div>
+
+        <!-- Coluna 4: Boletim do Arquivo -->
+        <div class="stagger-item">
+          <span class="text-ivory-base block mb-3 font-bold">BOLETIM DO ARQUIVO:</span>
+          <p class="mb-3 text-[8px] text-ivory-muted/90">
+            Receba notas curatoriais, chamadas monográficas e avisos de abertura de reservas.
+          </p>
+          <form class="flex flex-col space-y-2" id="archive-newsletter-form" onsubmit="event.preventDefault(); alert('Nota arquivística: Inscrição registrada com sucesso no tomo de comunicações.');">
+            <input 
+              aria-label="Endereço de e-mail para notas do arquivo"
+              class="bg-charcoal-tint border-0 border-b border-ivory-border text-[9.5px] font-mono text-ivory-base placeholder-ivory-muted/40 focus:ring-0 focus:border-gold-accent px-0 py-1.5 uppercase tracking-wider" 
+              placeholder="SEU EMAIL..." 
+              required="" 
+              type="email"
+            />
+            <button 
+              class="action-btn-editorial text-left meta-micro text-ivory-light hover:text-gold-accent pt-1 transition-colors cursor-pointer" 
+              type="submit"
+            >
+              <span>RECEBER NOTAS DO ARQUIVO</span>
+              <span class="arrow-move text-gold-accent">→</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Código de Barras e Direitos Reservados com Revelação no Scroll -->
+      <div class="flex flex-col sm:flex-row justify-between items-center pt-8 border-t border-ivory-border/20 text-[8px] font-mono text-ivory-muted/70 gap-4 reveal-on-scroll">
+        <div>
+          CÓDIGO DE TOMBO ARQUIVÍSTICO: <span class="tracking-[0.3em] text-ivory-muted" aria-hidden="true">||||| | ||| |||| || |||||| | ||</span> [MNT-034-2026]
+        </div>
+        <div>
+          MUSEU NOCTURNE / PORTO ALEGRE / BRASIL — TODOS OS DIREITOS DE ARQUIVO RESERVADOS
+        </div>
+      </div>
+
+      <!-- Tipografia Monumental Sangrando no Colofão Inferior (Mastrer3.md Seção 33) -->
+      <div class="monumental-footer-bleed text-center -mb-10 sm:-mb-16 pt-6 overflow-hidden select-none" aria-hidden="true">
+        NOCTURNE 034
+      </div>
+
+    </div>
+  </footer>
+  <!-- FIM: Rodapé Editorial Institucional -->
+
+  <!-- INÍCIO: Modal Interativo de Laudo Técnico Catalográfico -->
+  <div 
+    id="archival-modal" 
+    class="fixed inset-0 z-50 modal-backdrop hidden items-center justify-center p-4 overflow-y-auto"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-title"
+  >
+    <div class="bg-charcoal-deep hairline-all w-full max-w-2xl p-6 md:p-8 relative shadow-2xl my-8">
+      
+      <!-- Cabeçalho do Modal -->
+      <div class="flex justify-between items-start pb-4 hairline-b mb-6">
+        <div>
+          <div class="meta-micro text-gold-accent mb-1">MUSEU NOCTURNE — LAUDO DE CONSERVAÇÃO &amp; TOMBO</div>
+          <h3 id="modal-title" class="font-display text-2xl md:text-3xl text-ivory-light uppercase">
+            REGISTRO TÉCNICO
+          </h3>
+          <div id="modal-code" class="meta-mono text-gold-accent font-bold mt-1">MNT-000</div>
+        </div>
+        <button 
+          class="meta-mono text-ivory-muted hover:text-ivory-light border border-ivory-border px-3 py-1 cursor-pointer"
+          onclick="closeArchivalModal()"
+          aria-label="Fechar laudo técnico"
+        >
+          FECHAR [×]
+        </button>
+      </div>
+
+      <!-- Corpo do Modal (Ficha Técnica de Conservação) -->
+      <div class="space-y-6 font-mono text-xs text-ivory-muted leading-relaxed">
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 hairline-b pb-6">
+          <div>
+            <span class="meta-micro text-ivory-base block">DATAÇÃO / ORIGEM:</span>
+            <span id="modal-date" class="text-ivory-light font-serif text-base">c. 1800</span>
+          </div>
+          <div>
+            <span class="meta-micro text-ivory-base block">ESTADO DE CONSERVAÇÃO:</span>
+            <span id="modal-status" class="text-gold-accent font-bold">ESTÁVEL</span>
+          </div>
+          <div>
+            <span class="meta-micro text-ivory-base block">COMPOSIÇÃO MATERIAL:</span>
+            <span id="modal-material" class="text-ivory-light">Linho, pigmento, madeira</span>
+          </div>
+          <div>
+            <span class="meta-micro text-ivory-base block">LOCALIZAÇÃO ATUAL:</span>
+            <span id="modal-location" class="text-ivory-light">Galeria 04 / Reserva Técnica</span>
+          </div>
+        </div>
+
+        <div>
+          <span class="meta-micro text-ivory-base block mb-2">PARECER CURATORIAL &amp; HISTÓRICO DE RESTAURO:</span>
+          <p id="modal-description" class="font-serif italic text-sm text-ivory-base/90 leading-relaxed bg-charcoal-tint p-4 hairline-all">
+            Análise do objeto e das condições de degradação controlada.
+          </p>
+        </div>
+
+        <!-- Parâmetros de Inspeção Técnica -->
+        <div class="grid grid-cols-3 gap-2 text-center text-[9px] hairline-all p-3 bg-charcoal-tint/50">
+          <div>
+            <span class="text-ivory-muted block">LUX TOLERADO:</span>
+            <span class="text-ivory-light font-bold">≤ 45 LUX</span>
+          </div>
+          <div>
+            <span class="text-ivory-muted block">UMIDADE EXIGIDA:</span>
+            <span class="text-ivory-light font-bold">48% ± 2%</span>
+          </div>
+          <div>
+            <span class="text-ivory-muted block">FILTRO ULTRAVIOLETA:</span>
+            <span class="text-gold-accent font-bold">100% TOTAL</span>
+          </div>
+        </div>
+
+        <!-- Assinatura Técnica -->
+        <div class="flex justify-between items-end pt-4 hairline-t meta-micro text-ivory-muted">
+          <div>
+            <span>RESPONSÁVEL TÉCNICA:</span><br/>
+            <span class="text-ivory-light font-bold">DRA. HELENA MOREIRA</span> — CURADORIA GERAL
+          </div>
+          <div class="text-right text-gold-accent">
+            CARIMBO DIGITAL MNT-034
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- FIM: Modal Interativo de Laudo Técnico Catalográfico -->
+
+  <!-- Scripts Interativos do Cliente -->
+  <script data-purpose="interactive-scripts">
+    // Base de dados dos laudos técnicos do arquivo
+    const archivalDossiers = {
+      'MNT-017': {
+        title: 'Estudo Sem Título (Mãos em Prece)',
+        code: 'REG. MNT-017 / 1894',
+        date: 'c. 1894 — Escola Européia Anônima',
+        material: 'Óleo sobre linho cru escurecido com cola de coelho',
+        status: 'ESTÁVEL (MICROCLIMA CONTROLADO)',
+        location: 'Galeria Permanente / Gabinete de Estudos',
+        description: 'Pintura a óleo sobre trama de linho artesanal. Apresenta craquelê pronunciado na região inferior direita compatível com exposição a ambientes secos no início do século XX. Camada pictórica fixada com sucesso em 2018 utilizando resina damar pura e cera microcristalina.'
+      },
+      'MNT-028': {
+        title: 'Relicário em Seda & Fios de Ouro',
+        code: 'REG. MNT-028 / 1770',
+        date: 'c. 1770 — Braga, Portugal',
+        material: 'Madeira de nogueira, veludo carmim oxidado e fios de ouro 22k',
+        status: 'FRÁGIL EXTREMO (MANUSEIO RESTRITO)',
+        location: 'Reserva Técnica B / Gaveta Climatizada 03',
+        description: 'Cofre relicário de uso conventual. O veludo apresenta desgaste acentuado por atrito devocional ao longo de dois séculos. Fios de ouro mantêm 98% da integridade estrutural sem oxidação cúprica. Proibida qualquer manipulação sem luvas de algodão cru não alvejado.'
+      },
+      'MNT-041': {
+        title: 'Torso & Fragmento de Mármore',
+        code: 'REG. MNT-041 / 1820',
+        date: 'c. 1820 — Roma, Itália',
+        material: 'Mármore carrarense com pátina mineral e inclusões de ferro',
+        status: 'FISSURA ESTABILIZADA (PÁTINA MINERAL IV)',
+        location: 'Galeria 04 — A Memória das Coisas',
+        description: 'Fragmento escultórico de torso clássico com fratura oblíqua antiga. Superfície tratada com nanocal para consolidar a microestrutura cristalina sem alterar a tonalidade acinzentada adquirida pelo contato com sedimentos subterrâneos.'
+      },
+      'MNT-052': {
+        title: 'Cofre Relicário & Herbário Seco',
+        code: 'REG. MNT-052 / 1540',
+        date: 'c. 1540 — Flandres / França',
+        material: 'Madeira de carvalho, ferragens forjadas, herbário seco e linho',
+        status: 'ANÓXIA 100% PURA (CÂMARA DE NITROGÊNIO)',
+        location: 'Galeria 05 — Gabinete de Relíquias',
+        description: 'Caixa relicária contendo espécimes botânicos secos (sementes de papoula, folhas de sálvia e linho sacro) intactos há quase quinhentos anos. Preservada em câmara selada com nitrogênio para evitar qualquer degradação fúngica ou oxidativa.'
+      },
+      'MNT-034': {
+        title: 'A Memória das Coisas (Matriz Iconográfica)',
+        code: 'REG. MNT-034 / 2026',
+        date: '2026 — Museu Nocturne / Porto Alegre',
+        material: 'Fotografia analógica 35mm em gelatina e prata, joalheria e renda',
+        status: 'EXPOSIÇÃO ATUAL / REGISTRO MATRIZ',
+        location: 'Galeria 04 + 05 — Núcleo Central',
+        description: 'Obra matricial da Exposição 034. Capturada em câmara técnica sob luz direcional e tempos longos de exposição. Registra o encontro do tecido com o metal e a pele como metáfora da retenção silenciosa da memória nos artefatos humanos.'
+      }
+    };
+
+    function openArchivalModal(itemCode) {
+      const modal = document.getElementById('archival-modal');
+      const data = archivalDossiers[itemCode] || archivalDossiers['MNT-034'];
+      
+      document.getElementById('modal-title').textContent = data.title;
+      document.getElementById('modal-code').textContent = data.code;
+      document.getElementById('modal-date').textContent = data.date;
+      document.getElementById('modal-material').textContent = data.material;
+      document.getElementById('modal-status').textContent = data.status;
+      document.getElementById('modal-location').textContent = data.location;
+      document.getElementById('modal-description').textContent = `“${data.description}”`;
+
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeArchivalModal() {
+      const modal = document.getElementById('archival-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+
+    // Fechar modal ao clicar fora ou via tecla Escape
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeArchivalModal();
+    });
+
+    document.getElementById('archival-modal')?.addEventListener('click', (e) => {
+      if (e.target === document.getElementById('archival-modal')) {
+        closeArchivalModal();
+      }
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Filtro dinâmico da Tabela de Registro
+      const searchInput = document.getElementById('archive-search');
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const query = e.target.value.toLowerCase().trim();
+          const tableRows = document.querySelectorAll('tbody tr');
+          
+          tableRows.forEach(row => {
+            const text = row.innerText.toLowerCase();
+            if (!query || text.includes(query)) {
+              row.style.display = '';
+            } else {
+              row.style.display = 'none';
+            }
+          });
+        });
+      }
+
+      // 2. Upcoming Exhibitions Hover Preview
+      const rows = document.querySelectorAll('.exhibition-row');
+      const previewImg = document.getElementById('ledger-preview-img');
+      const previewTitle = document.getElementById('preview-title-tag');
+      const previewGallery = document.getElementById('preview-gallery-tag');
+
+      rows.forEach(row => {
+        row.addEventListener('mouseenter', () => {
+          const imgSrc = row.getAttribute('data-preview-img');
+          const title = row.getAttribute('data-preview-title');
+          const gallery = row.getAttribute('data-preview-gallery');
+
+          if (previewImg && imgSrc) {
+            previewImg.style.opacity = '0.35';
+            setTimeout(() => {
+              previewImg.src = imgSrc;
+              previewImg.style.opacity = '1';
+            }, 100);
+          }
+          if (previewTitle && title) previewTitle.textContent = title;
+          if (previewGallery && gallery) previewGallery.textContent = gallery;
+        });
+      });
+
+      // 3. Motion System: Hero Entry Choreography & Decrypted Text (animacoes2.md)
+      const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      const heroPhoto = document.getElementById('hero-main-photo');
+      const heroIndex = document.getElementById('hero-index-tag');
+      const heroTitleLines = document.querySelectorAll('.hero-title-line');
+      const heroScript = document.getElementById('hero-script');
+      const heroRule = document.getElementById('hero-rule');
+      const heroQuote = document.getElementById('hero-quote');
+      const heroCapsule = document.getElementById('hero-capsule');
+      const heroGlyphs = document.getElementById('hero-glyphs');
+      const heroCta = document.getElementById('hero-cta');
+
+      // Efeito Decrypted Text (React Bits adaptado para tipografia arquivística)
+      const ARCHIVAL_CHARS = '0123456789•◆✣[]/—ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      function runDecryptedText(el, targetText, duration = 350) {
+        if (!el || isReducedMotion) {
+          if (el) el.textContent = targetText;
+          return;
+        }
+        const start = performance.now();
+        const len = targetText.length;
+
+        function update(now) {
+          const progress = Math.min(1, (now - start) / duration);
+          const fixedChars = Math.floor(progress * len);
+          let output = targetText.slice(0, fixedChars);
+          for (let i = fixedChars; i < len; i++) {
+            if (targetText[i] === ' ' || targetText[i] === '—' || targetText[i] === '/') {
+              output += targetText[i];
+            } else {
+              output += ARCHIVAL_CHARS[Math.floor(Math.random() * ARCHIVAL_CHARS.length)];
+            }
+          }
+          el.textContent = output;
+          if (progress < 1) {
+            requestAnimationFrame(update);
+          } else {
+            el.textContent = targetText;
+          }
+        }
+        requestAnimationFrame(update);
+      }
+
+      function triggerAllDecrypted(scope = document) {
+        scope.querySelectorAll('.decrypted-text').forEach(el => {
+          const val = el.getAttribute('data-value') || el.textContent.trim();
+          runDecryptedText(el, val, 450);
+        });
+      }
+
+      if (isReducedMotion) {
+        // Estado final imediato para reduced-motion
+        heroPhoto?.classList.add('is-visible');
+        heroIndex?.classList.add('is-visible');
+        heroTitleLines.forEach(l => l.classList.add('is-visible'));
+        heroScript?.classList.add('is-visible');
+        heroRule?.classList.add('is-visible');
+        heroQuote?.classList.add('is-visible');
+        heroCapsule?.classList.add('is-visible');
+        heroGlyphs?.classList.add('is-visible');
+        heroCta?.classList.add('is-visible');
+      } else {
+        // Sequência temporal assíncrona cinematográfica (North Star: ~1.2s - 1.4s)
+        setTimeout(() => heroPhoto?.classList.add('is-visible'), 100);
+        setTimeout(() => {
+          heroIndex?.classList.add('is-visible');
+          triggerAllDecrypted(heroIndex);
+        }, 280);
+        setTimeout(() => {
+          if (heroTitleLines[0]) heroTitleLines[0].classList.add('is-visible');
+        }, 380);
+        setTimeout(() => {
+          if (heroTitleLines[1]) heroTitleLines[1].classList.add('is-visible');
+        }, 520);
+        setTimeout(() => heroScript?.classList.add('is-visible'), 680);
+        setTimeout(() => heroRule?.classList.add('is-visible'), 780);
+        setTimeout(() => {
+          heroQuote?.classList.add('is-visible');
+          heroCapsule?.classList.add('is-visible');
+          heroGlyphs?.classList.add('is-visible');
+        }, 880);
+        setTimeout(() => heroCta?.classList.add('is-visible'), 1050);
+      }
+
+      // Garantir reprodução fluida do vídeo da Hero
+      if (heroPhoto && heroPhoto.tagName === 'VIDEO') {
+        heroPhoto.play().catch(() => {
+          document.addEventListener('click', () => heroPhoto.play(), { once: true });
+        });
+      }
+
+      // 3.1. Midground Hero: Partículas Minerais em Suspensão (Canvas 60fps otimizado)
+      const dustCanvas = document.getElementById('hero-dust-canvas');
+      let dustAnimFrameId = null;
+      if (dustCanvas && !isReducedMotion) {
+        const ctx = dustCanvas.getContext('2d');
+        let width = 0, height = 0;
+        let particles = [];
+        const PARTICLE_COUNT = 38;
+
+        function resizeCanvas() {
+          const rect = dustCanvas.getBoundingClientRect();
+          width = rect.width;
+          height = rect.height;
+          dustCanvas.width = width * (window.devicePixelRatio || 1);
+          dustCanvas.height = height * (window.devicePixelRatio || 1);
+          ctx.scale(window.devicePixelRatio || 1, window.devicePixelRatio || 1);
+        }
+
+        function initParticles() {
+          particles = [];
+          for (let i = 0; i < PARTICLE_COUNT; i++) {
+            particles.push({
+              x: Math.random() * width,
+              y: Math.random() * height,
+              radius: Math.random() * 1.3 + 0.6,
+              speedY: -(Math.random() * 0.22 + 0.08),
+              speedX: (Math.random() - 0.5) * 0.12,
+              opacity: Math.random() * 0.45 + 0.15,
+              hue: Math.random() > 0.45 ? 'rgba(216, 216, 187,' : 'rgba(154, 128, 61,',
+              seed: Math.random() * 100
+            });
+          }
+        }
+
+        function renderParticles(time) {
+          ctx.clearRect(0, 0, width, height);
+          for (let p of particles) {
+            p.y += p.speedY;
+            p.x += Math.sin(time * 0.0008 + p.seed) * 0.18 + p.speedX;
+            if (p.y < -10) p.y = height + 10;
+            if (p.x < -10) p.x = width + 10;
+            if (p.x > width + 10) p.x = -10;
+
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+            ctx.fillStyle = `${p.hue} ${p.opacity})`;
+            ctx.fill();
+          }
+          dustAnimFrameId = requestAnimationFrame(renderParticles);
+        }
+
+        window.addEventListener('resize', () => {
+          resizeCanvas();
+          initParticles();
+        }, { passive: true });
+
+        resizeCanvas();
+        initParticles();
+        dustAnimFrameId = requestAnimationFrame(renderParticles);
+
+        // Pausar canvas se a Hero estiver fora da viewport ou em aba inativa
+        if ('IntersectionObserver' in window) {
+          const heroSec = document.getElementById('hero');
+          const canvasObs = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+              if (!e.isIntersecting) {
+                if (dustAnimFrameId) cancelAnimationFrame(dustAnimFrameId);
+                dustAnimFrameId = null;
+              } else if (!dustAnimFrameId && !document.hidden) {
+                dustAnimFrameId = requestAnimationFrame(renderParticles);
+              }
+            });
+          }, { threshold: 0.05 });
+          if (heroSec) canvasObs.observe(heroSec);
+        }
+
+        document.addEventListener('visibilitychange', () => {
+          if (document.hidden && dustAnimFrameId) {
+            cancelAnimationFrame(dustAnimFrameId);
+            dustAnimFrameId = null;
+          } else if (!dustAnimFrameId && !isReducedMotion) {
+            dustAnimFrameId = requestAnimationFrame(renderParticles);
+          }
+        });
+      }
+
+      // 3.2. Interactive Layer: Micro-Parallax de Mouse e Spotlight na Hero
+      const heroSection = document.getElementById('hero');
+      const spotlightBeam = document.getElementById('hero-spotlight-beam');
+      const gridLayer = document.getElementById('hero-grid-layer');
+
+      if (heroSection && !isReducedMotion && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+        let mouseX = 0.5, mouseY = 0.45;
+        let currentX = 0.5, currentY = 0.45;
+        let heroParallaxFrame = null;
+
+        function updateHeroParallax() {
+          currentX += (mouseX - currentX) * 0.06;
+          currentY += (mouseY - currentY) * 0.06;
+
+          if (spotlightBeam) {
+            spotlightBeam.style.setProperty('--beam-x', `${(currentX * 100).toFixed(1)}%`);
+            spotlightBeam.style.setProperty('--beam-y', `${(currentY * 100).toFixed(1)}%`);
+          }
+          if (gridLayer) {
+            const shiftX = (currentX - 0.5) * -12;
+            const shiftY = (currentY - 0.5) * -12;
+            gridLayer.style.transform = `translate3d(${shiftX.toFixed(1)}px, ${shiftY.toFixed(1)}px, 0)`;
+          }
+
+          heroParallaxFrame = requestAnimationFrame(updateHeroParallax);
+        }
+
+        heroSection.addEventListener('mousemove', (e) => {
+          const rect = heroSection.getBoundingClientRect();
+          mouseX = (e.clientX - rect.left) / rect.width;
+          mouseY = (e.clientY - rect.top) / rect.height;
+          if (!heroParallaxFrame) {
+            heroParallaxFrame = requestAnimationFrame(updateHeroParallax);
+          }
+        }, { passive: true });
+
+        heroSection.addEventListener('mouseleave', () => {
+          mouseX = 0.5;
+          mouseY = 0.45;
+        }, { passive: true });
+
+        heroParallaxFrame = requestAnimationFrame(updateHeroParallax);
+      }
+
+      // 3.3. React Bits: Spotlight Cards & Tilted Cards (Acervo e Galerias)
+      const spotlightCards = document.querySelectorAll('.spotlight-card');
+      const hasFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+      if (!isReducedMotion && hasFinePointer) {
+        spotlightCards.forEach(card => {
+          card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            card.style.setProperty('--mouse-x', `${x}px`);
+            card.style.setProperty('--mouse-y', `${y}px`);
+
+            // Se o card possuir efeito tilt
+            if (card.classList.contains('tilted-card')) {
+              const rotX = (((y / rect.height) - 0.5) * -4).toFixed(2);
+              const rotY = (((x / rect.width) - 0.5) * 4).toFixed(2);
+              card.style.transform = `perspective(1000px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale3d(1.012, 1.012, 1.012)`;
+            }
+          });
+
+          card.addEventListener('mouseleave', () => {
+            if (card.classList.contains('tilted-card')) {
+              card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+            }
+          });
+        });
+
+        // 3.4. React Bits: Magnetic Buttons com Retorno Suave
+        const magneticBtns = document.querySelectorAll('.magnetic-btn');
+        magneticBtns.forEach(btn => {
+          btn.addEventListener('mousemove', (e) => {
+            const rect = btn.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+            const deltaX = (e.clientX - centerX) * 0.22;
+            const deltaY = (e.clientY - centerY) * 0.22;
+            const clampedX = Math.max(-5, Math.min(5, deltaX));
+            const clampedY = Math.max(-4, Math.min(4, deltaY));
+            btn.style.transform = `translate3d(${clampedX.toFixed(1)}px, ${clampedY.toFixed(1)}px, 0)`;
+          });
+
+          btn.addEventListener('mouseleave', () => {
+            btn.style.transform = 'translate3d(0, 0, 0)';
+          });
+        });
+
+        // 3.5. Retículo Técnico Contextual para Obras e Laudos
+        const reticle = document.getElementById('archival-reticle');
+        if (reticle) {
+          let reticleX = -100, reticleY = -100;
+          let currentRetX = -100, currentRetY = -100;
+          let reticleFrame = null;
+
+          function animateReticle() {
+            currentRetX += (reticleX - currentRetX) * 0.25;
+            currentRetY += (reticleY - currentRetY) * 0.25;
+            reticle.style.left = `${currentRetX}px`;
+            reticle.style.top = `${currentRetY}px`;
+            reticleFrame = requestAnimationFrame(animateReticle);
+          }
+          reticleFrame = requestAnimationFrame(animateReticle);
+
+          const reticleTriggers = document.querySelectorAll('[data-reticle]');
+          reticleTriggers.forEach(el => {
+            el.addEventListener('mouseenter', (e) => {
+              const text = el.getAttribute('data-reticle') || 'LAUDO TÉCNICO';
+              reticle.textContent = text;
+              reticle.classList.add('is-active');
+              reticleX = e.clientX;
+              reticleY = e.clientY;
+            });
+            el.addEventListener('mousemove', (e) => {
+              reticleX = e.clientX + 14;
+              reticleY = e.clientY + 14;
+            });
+            el.addEventListener('mouseleave', () => {
+              reticle.classList.remove('is-active');
+            });
+          });
+        }
+      }
+
+      // 4. Scroll Reveal Observer em Todas as Seções (animacoes.md: Reveal Once = True)
+      const revealTargets = document.querySelectorAll(
+        '.reveal-on-scroll, .reveal-fade-in, .reveal-line-h, .reveal-stagger-group, .archival-crop-reveal, .gallery-light-reveal'
+      );
+
+      if (isReducedMotion) {
+        revealTargets.forEach(el => el.classList.add('is-visible'));
+      } else if ('IntersectionObserver' in window) {
+        const scrollObserver = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              triggerAllDecrypted(entry.target);
+              obs.unobserve(entry.target); // Reveal once = true
+            }
+          });
+        }, {
+          threshold: 0.10,
+          rootMargin: '0px 0px -30px 0px'
+        });
+
+        revealTargets.forEach(el => scrollObserver.observe(el));
+      } else {
+        revealTargets.forEach(el => el.classList.add('is-visible'));
+      }
+
+      // 4.1. Observer Específico para o Interlúdio Arquivístico
+      const interludeSec = document.getElementById('archival-interlude');
+      if (interludeSec) {
+        const activateInterlude = () => {
+          interludeSec.classList.add('interlude-active', 'is-visible');
+          document.querySelectorAll('.quote-line, #interlude-script, #interlude-rule').forEach(el => el.classList.add('is-visible'));
+        };
+
+        if (isReducedMotion) {
+          activateInterlude();
+        } else if ('IntersectionObserver' in window) {
+          const interludeObs = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                activateInterlude();
+                obs.unobserve(entry.target);
+              }
+            });
+          }, {
+            threshold: 0.12,
+            rootMargin: '0px 0px -20px 0px'
+          });
+          interludeObs.observe(interludeSec);
+        } else {
+          activateInterlude();
+        }
+      }
+
+      // 5. Transição Sutil de Cabeçalho ao Rolar (animacoes.md - Seção 29)
+      const header = document.querySelector('header[data-purpose="editorial-header"]');
+      if (header) {
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 90) {
+            header.style.backgroundColor = 'rgba(18, 19, 15, 0.98)';
+          } else {
+            header.style.backgroundColor = 'rgba(18, 19, 15, 0.95)';
+          }
+        }, { passive: true });
+      }
+
+      // 6. Acordeão Editorial Acessível do FAQ (Mastrer3.md Seção 31)
+      const faqTriggers = document.querySelectorAll('.faq-trigger');
+      faqTriggers.forEach(trigger => {
+        trigger.addEventListener('click', () => {
+          const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+          const panelId = trigger.getAttribute('aria-controls');
+          const panel = document.getElementById(panelId);
+
+          // Fechar outros acordeões abertos para foco editorial
+          faqTriggers.forEach(otherTrigger => {
+            if (otherTrigger !== trigger) {
+              otherTrigger.setAttribute('aria-expanded', 'false');
+              const otherPanel = document.getElementById(otherTrigger.getAttribute('aria-controls'));
+              if (otherPanel) otherPanel.classList.remove('is-open');
+            }
+          });
+
+          // Alternar estado do item clicado
+          if (isExpanded) {
+            trigger.setAttribute('aria-expanded', 'false');
+            if (panel) panel.classList.remove('is-open');
+          } else {
+            trigger.setAttribute('aria-expanded', 'true');
+            if (panel) panel.classList.add('is-open');
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
